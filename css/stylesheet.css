@@ -272,5 +272,4 @@ input:focus{outline: 0;}
 #button{background: rgba(256, 2556, 256, .6); margin-top: 30px;}
 #button:hover{background: #58ce2c;}
 
-.footer{text-align: center; margin: 20px auto; display: grid;
-    grid-template-columns: repeat(3, 33%);}
+.footer{text-align: center; margin: 20px auto; display: grid;}
