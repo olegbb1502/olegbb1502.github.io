@@ -102,8 +102,7 @@
 	#info{
 		display:block;
     	font-size: 15pt;
-    	width: 55%;
-    	margin:10px 0 0 12%;
+    	margin:10px 0 0 20%;
     	position: absolute;
     	background: rgba(256,256,256,.6);
 	}
