@@ -86,7 +86,7 @@
 	}
 	.header h2,.header p,.header a{margin:10px auto; color: #fff; text-align: center;}
 	.header h2{ text-align: center; width: 100%; margin: 60px auto; font-size: 25pt;}
-	.header p{font-size: 22pt; width: 70%; margin-bottom: 30px;}
+	.header p{font-size: 22pt; width: 70%; margin-bottom: 20px;}
 	.header a{text-decoration: none;}
 	#fast{  
 		text-align: center;
