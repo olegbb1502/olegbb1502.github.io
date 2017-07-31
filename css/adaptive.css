@@ -40,8 +40,8 @@
 		height: 35px;
 	}
 	.header h2,.header p,.header a{margin:20px auto; color: #fff; text-align: center;}
-	.header h2{font-size: 30pt; margin-bottom: 80px; text-align: center; width: 100%; margin: 70px auto;}
-	.header p{font-size: 28pt; width: 70%; margin-bottom: 30px;}
+	.header h2{font-size: 25pt; margin-bottom: 80px; text-align: center; width: 100%; margin: 70px auto;}
+	.header p{font-size: 23pt; width: 70%; margin-bottom: 30px;}
 	.header a{text-decoration: none; font-size: 28pt;}
 	#fast{ 
     	width: 30%; 
