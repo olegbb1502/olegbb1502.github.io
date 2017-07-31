@@ -102,13 +102,13 @@
 	#info{
 		display:block;
     	font-size: 15pt;
-    	width: 65%;
-    	margin:10px 0 0 6%;
+    	width: 55%;
+    	margin:10px 0 0 12%;
     	position: absolute;
     	background: rgba(256,256,256,.6);
 	}
 	#id1,#id2,#id3,#id4{font-size: 15pt; margin: 8px 4px;}
-	#info span{margin-top: 25px; font-size: 28pt;}
+	#info span{margin-top: 25px; font-size: 18pt;}
 	li{font-size: 12pt; margin-top: -5px;}
 	.second h2{color: #000;  text-align: center; font-size: 20pt;margin: 15px 0;}
 	.grid {display: block; margin: 5px auto; text-align: center;}
