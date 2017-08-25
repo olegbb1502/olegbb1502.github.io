@@ -79,7 +79,7 @@ h3,#id1,#id2,#id3,#id4{font-family: "Head";}
     transform: scale(1.2); 
 }
 
-#fH{text-align: center; color: #000; font-size: 30pt;margin-bottom: 20px; display:none;}
+#fH{text-align: center; color: #000; margin-bottom: 20px; display:none;}
 
 .first{
     display: grid;

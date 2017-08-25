@@ -32,7 +32,8 @@
 }
 
 @media (max-width: 768px) {
-	body{max-width: 768px;}
+	html{width: 100%;}
+	/*body{max-width: 100%;}*/
 	.header{height: 430px; text-align: center;}
 	.header img{
 		margin: 15px 0 0 0;
@@ -58,7 +59,7 @@
 	}
 	#id1,#id2,#id3,#id4{font-size: 18pt; margin: 10px 5px;}
 	#info span{margin-top: 25px; font-size: 18pt;}
-	.second h2{color: #000;  text-align: center; font-size: 20pt;margin: 15px 0;}
+	.second h2{color: #000;  text-align: center; font-size: 18pt;margin: 15px 0;}
 	.grid {grid-template-columns: repeat(2, 50%);}
 	.grid figure {width: 280px; margin: 5px 10%;}
 	.grid figure figcaption{font-size: 20pt; background: rgba(0,0,0,.5); text-align: center; padding-top: 12px;}
@@ -77,7 +78,7 @@
 
 
 @media (max-width: 480px) {
-	body{max-width: 440px;}
+	body{max-width: 100%;}
 	.header{height: 730px; text-align: center;}
 	.header img{
 		margin: 15px 0 0 0;
@@ -109,7 +110,7 @@
 	#id1,#id2,#id3,#id4{font-size: 15pt; margin: 8px 4px; text-align: center;}
 	#info span{margin-top: 25px; font-size: 18pt;}
 	li{font-size: 12pt; margin-top: -5px;}
-	.second h2{color: #000;  text-align: center; font-size: 20pt;margin: 15px 0;}
+	.second h2{color: #000;  text-align: center; font-size: 15pt;margin: 15px 0;}
 	.grid {display: block; margin: 5px auto; text-align: center;}
 	.grid figure {width: 300px; margin: 5px auto;}
 	.grid figure h3{font-size: 26pt;}
@@ -122,7 +123,7 @@
 	#messegeResult{text-align: center; font-size: 18pt; margin-bottom: 15px;}
 	#formMain{margin-top: 60px;}
 	input{width: 80%; height: 80px; margin:6px 0; border-radius: 30px; padding-left: 15px; font-size: 15pt; border: 0px solid #fff;}
-	#button{margin-top: 65px; width: 100%;}
+	#button{margin-top: 65px; width: 100%; font-size: 95%;}
 	.footer{font-size: 8pt; margin-top: 5px;}
 }
 
