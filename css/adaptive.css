@@ -105,7 +105,7 @@
     	font-size: 15pt;
     	margin:15px 0 0 10%;
     	position: absolute;
-    	background: rgba(256,256,256,.6);
+    	background: rgba(256,256,256,.8);
 	}
 	#id1,#id2,#id3,#id4{font-size: 15pt; margin: 8px 4px; text-align: center;}
 	#info span{margin-top: 25px; font-size: 18pt;}
