@@ -195,7 +195,7 @@ function onResourcesLoaded(){
 	meshes["tent2"] = models.tent.mesh.clone();
 	meshes["campfire1"] = models.campfire.mesh.clone();
 	meshes["campfire2"] = models.campfire.mesh.clone();
-	for(var i=0; i<1000; i++){
+	for(var i=0; i<3; i++){
 		meshes["nature"+i] = models.nature.mesh.clone();
 		meshes["tent"+i] = models.tent.mesh.clone();
 	}
@@ -213,14 +213,14 @@ function onResourcesLoaded(){
 	scene.add(meshes["campfire1"]);
 	scene.add(meshes["campfire2"]);
 
-	for(var i=0; i<1000; i++){
+	for(var i=0; i<3; i++){
 		var j = Math.random()/i;
 		meshes["nature"+i].position.set((j+i)/3, 0, -j/i);
 		meshes["tent"+1].position.set(-5+j, 0, 4*j);
 	}
 	
 
-	for (var i = 0; i <1000; i++) {
+	for (var i = 0; i <3; i++) {
 		scene.add(meshes["nature"+i]);
 		scene.add(meshes["tent"+i]);
 	}
