@@ -1,0 +1,342 @@
+@media (max-width: 992px) {
+	body{max-width: 992px;}
+	header{
+		min-height: 650px;
+	}
+
+	#logo{
+		margin-left:42%;
+	}
+
+	header h1{
+    	color: #fff;
+    	margin-top: 25px;
+    	font-size: 35px;
+    	text-align: center;
+    	margin-left: auto;
+    	margin-top: 75px;
+	}
+
+	header span{
+	    display: block;
+	    margin-left: auto;
+	    text-align: center;
+	    width: 400px;
+	    color: #fff;
+	    margin-top: 75px;
+	    font-size: 25px;
+	}
+
+	a{font-size: 25px;}
+
+	#button{ 
+    	text-align: center;
+    	margin: 40px 0 0 32%;
+    	width:350px;
+    	height:40px;
+	}
+
+	.inform{
+	    background: #fff;
+	    display: grid;
+	    grid-template-columns: repeat(2, 50%);
+	    grid-template-rows: 200px 200px;
+	    justify-content: center;
+	    /*border-bottom: 4px dotted black;*/
+	    padding:45px 0;
+	    width: 70%;
+	}
+	
+	#info{
+	    font-size: 20px;
+	    text-align: center;
+	    width: 200px;
+	    height: 101%;
+	    position:relative;
+	    border-bottom: 2px dotted rgba(0,0,0,.5);
+	}
+
+	#info h3{margin-top: 10px;}
+	#id1{top:65px;}
+	#id2{top:80px;}
+	#id3{top:45px;}
+	#id4{top:85px;}
+
+	.video_content{height: 40%;}
+
+	.video_content h2{margin-bottom: : 65px;}
+	
+	h2{
+		margin-bottom: 20px;
+		font-size: 20px;
+		text-align: center;
+	}
+
+	.start_video{
+		width: 100%;}
+	
+	.owl-carousel img{max-height:450px;}
+	
+	.opisanie,.owl-nav{display: none;}
+
+	.section3>h2{font-size: 20pt;width: 50%;}
+
+	.section3>p{
+    	font-size: 14pt;
+    	width: 45%;
+    	margin-bottom: 30px;
+	}
+
+	#check{
+    	display: grid;
+    	grid-template-columns: 250px 250px 250px;
+    	font-size: 14pt;
+    	margin: 0 10% 30px;
+
+	}
+	#room1,#room2,#room3{
+    	width: 200px;
+    	text-align: center;
+    	padding: 0 10px;
+    	margin: 0 25px;
+	}
+
+	footer{text-align: center; width: 80%; font-size: 8pt;}
+}
+
+@media (max-width: 768px) {
+	body{max-width: 768px;}
+	header{
+		min-height: 370px;
+	}
+
+	#logo{
+		margin-left:40%;
+	}
+
+	header h1{
+    	color: #fff;
+    	margin-top: 25px;
+    	font-size: 25px;
+    	text-align: center;
+    	margin-left: auto;
+	}
+
+	header span{
+	    display: block;
+	    margin-left: auto;
+	    text-align: center;
+	    width: 400px;
+	    color: #fff;
+	    margin-top: 35px;
+	    font-size: 20px;
+	}
+
+	a{font-size: 15px;}
+
+	#button{ 
+    	text-align: center;
+    	margin: 30px 0 0 30%;
+    	width:270px;
+    	height:40px;
+	}
+
+	.inform{
+	    background: #fff;
+	    display: grid;
+	    grid-template-columns: repeat(3, 45%);
+	    grid-template-rows: 200px 200px;
+	    justify-content: center;
+	    /*border-bottom: 4px dotted black;*/
+	    padding:25px 0;
+	    width: 70%;
+	}
+	
+	#info{
+	    font-size: 10px;
+	    text-align: center;
+	    width: 150px;
+	    height: 70%;
+	    position:relative;
+	    border-bottom: 2px dotted rgba(0,0,0,.5);
+	}
+
+	#info h3{margin-top: 10px;}
+	#id1,#id2,#id3,#id4,#id5,#id6{width: 150px; font-size: 45px;}
+	#id1,#id2,#id3{top:32px;}
+	#id4{top:45px;}
+	#id5, #id6{top:35%;}
+
+	.video_content{height: 30%;}
+	
+	h2{
+		margin-bottom: 20px;
+		font-size: 20px;
+		text-align: center;
+	}
+
+	.start_video{
+		width: 100%;
+		height: 450px;
+	}
+	
+	.owl-carousel img{max-height:450px;}
+	
+	.opisanie,.owl-nav{display: none;}
+
+	.section3>h2{font-size: 16pt;width: 50%;}
+
+	.section3>p{
+    	font-size: 10pt;
+    	width: 45%;
+    	margin-bottom: 30px;
+	}
+
+	#check{
+    	display: grid;
+    	grid-template-columns: 160px 160px 160px;
+    	font-size: 8pt;
+    	margin: 0 10% 30px;
+
+	}
+	#room1,#room2,#room3{
+    	width: 160px;
+    	text-align: center;
+    	padding: 0 10px;
+    	margin: 0 5px;
+	}
+
+	#zakaz{
+    width: 70%;
+    border:0px solid rgb(255,255,255);
+    background: #efe44b;
+    font-size: 20px;
+}
+
+	footer{text-align: center; width: 80%; font-size: 8pt;}
+}
+
+@media (max-width: 480px) {
+	body{max-width: 440px;}
+	header{
+		min-height: 750px;
+	}
+
+	#logo{margin-left:30%;}
+	#logo img{margin-top: 50px;}
+
+	header h1{
+    	color: #fff;
+    	margin-top: 75px;
+    	font-size: 15px;
+    	text-align: center;
+    	margin-left: auto;
+	}
+
+	header span{
+	    display: block;
+	    margin-left: auto;
+	    text-align: center;
+	    width: 250px;
+	    color: #fff;
+	    margin-top: 65px;
+	    font-size: 12px;
+	}
+
+	a{font-size: 20px;}
+
+	#button{ 
+    	text-align: center;
+    	margin: 110px 0 0 17%;
+    	width:240px;
+    	height:40px;
+	}
+
+	.inform{
+	    background: #fff;
+	    display: grid;
+	    grid-template-columns: repeat(2, 65%);
+	    grid-template-rows: 200px 200px;
+	    justify-content: center;
+	    /*border-bottom: 4px dotted black;*/
+	    padding:25px 0;
+	    width: 70%;
+	}
+	
+	#info{
+	    font-size: 14px;
+	    text-align: center;
+	    width: 150px;
+	    height: auto;
+	    padding-bottom: 5px;
+	    position:relative;
+	    border-bottom: 2px dotted rgba(0,0,0,.5);
+	}
+
+	#info h3{margin-top: 10px;}
+	#info p{font-size:15px;}
+	#id1,#id2,#id3,#id4,#id5,#id6{width: 150px; font-size: 45px;}
+	#id1{top:55px;}
+	#id2{top:70px;}
+	#id3{top:45px;}
+	#id4{top:65px;}
+	#id5, #id6{top:50%;}
+
+	.video_content{height: 80%;}
+	
+	h2{
+		margin-bottom: 20px;
+		font-size: 14pt;
+		text-align: center;
+	}
+
+	.start_video{
+		width: 100%;
+		height: 450px;
+	}
+	
+	.start_video img{    
+    	position: absolute;
+    	top: 50%;
+    	left: 50%;
+    	margin: -10% 0 0 -10%;
+	}	
+
+	.owl-carousel img{max-height:350px;}
+	
+	.opisanie,.owl-nav{display: none;}
+
+	.section3>h2{font-size: 13pt;width: 60%;}
+
+	.section3>p{
+    	font-size: 10pt;
+    	width: 80%;
+    	margin-bottom: 30px;
+	}
+
+	#check{
+    	display: block;
+    	font-size: 10pt;
+    	margin: 0 10% 30px;
+
+	}
+	#room1,#room2,#room3{
+    	width: 200px;
+    	text-align: center;
+    	padding: 0 10px;
+    	margin: 0 auto;
+	}
+	#form{
+    	display: grid;
+    	grid-template-columns: 65% 30%;
+    }
+	#zakaz{
+    	width: 62%;
+    	border:0px solid rgb(255,255,255);
+    	background: #efe44b;
+    	font-size: 10px;
+	}	
+
+	footer{text-align: center; width: 60%; font-size: 5pt; grid-template-columns: repeat(4, 80px);}
+}
+
