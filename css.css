@@ -6,46 +6,46 @@ body{
 
 .head{
 	margin: 0 auto;
-	height: 170px;
+	height: 120px;
 	background: #fff;
 	margin: 0;
 }
 
 .head>h1{
 	padding: 30px 15px;
-	font-size: 100px;
+	font-size: 60px;
 }
 
 .sites{
 	width: 80%;
-	height: 1000px;
+	height: 400px;
 	background: #fff;
 	margin: 30px auto;
 	text-align: center;	
 }
 
 .sites>h1{
-	font-size: 70px;
+	font-size: 40px;
 	margin:20px 12px;
 	padding-top: 20px;
 }
 
 ol{
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 }
 
 a{
 	text-decoration: none;
 	color: #000;
-	font-size: 34.5px;
+	font-size: 26px;
 	font-style: bold;
 	text-align: center;
 }
 
 li{
-	margin: 65px 100px;
-	font-size: 36px;
+	margin: 35px 40px;
+	font-size: 26px;
 	padding: 10px 15px;
 	width: 200px;
 }
