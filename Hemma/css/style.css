@@ -100,6 +100,20 @@ a {
   color: #c2c2c2;
   margin: 5px auto;
 }
+#modal li a:after {
+  background-color: #c2c2c2;
+  display: block;
+  content: "";
+  height: 5px;
+  width: 0%;
+  margin: 5px auto;
+  -webkit-transition: width .3s ease-in-out;
+  -moz--transition: width .3s ease-in-out;
+  transition: width .3s ease-in-out;
+}
+#modal li a:hover:after, #modal li a:focus:after {
+  width: 40%;
+}
 
 .wrapper {
   height: 100vh;
