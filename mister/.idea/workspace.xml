@@ -39,8 +39,8 @@
       <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="193" column="4" lean-forward="false" selection-start-line="193" selection-start-column="6" selection-end-line="193" selection-end-column="26" />
+            <state relative-caret-position="680">
+              <caret line="218" column="16" lean-forward="false" selection-start-line="218" selection-start-column="16" selection-end-line="218" selection-end-column="16" />
               <folding>
                 <element signature="e#1109#1185#0" expanded="false" />
                 <element signature="e#1187#8680#0" expanded="false" />
@@ -76,7 +76,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="71" />
     <option name="width" value="1033" />
     <option name="height" value="1087" />
@@ -160,15 +160,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1519313269560</updated>
-      <workItem from="1519313271526" duration="13363000" />
+      <workItem from="1519313271526" duration="13882000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13363000" />
+    <option name="totallyTimeSpent" value="13882000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="70" y="-8" width="1858" height="1096" extended-state="7" />
+    <frame x="70" y="-8" width="1858" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1606949" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -249,8 +249,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="193" column="4" lean-forward="false" selection-start-line="193" selection-start-column="6" selection-end-line="193" selection-end-column="26" />
+        <state relative-caret-position="680">
+          <caret line="218" column="16" lean-forward="false" selection-start-line="218" selection-start-column="16" selection-end-line="218" selection-end-column="16" />
           <folding>
             <element signature="e#1109#1185#0" expanded="false" />
             <element signature="e#1187#8680#0" expanded="false" />

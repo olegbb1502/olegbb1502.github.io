@@ -191,8 +191,10 @@
     background-image: url("../images/bg.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    background-size: cover;
+    background-position: center;
     /*background: #000000;*/
-    background-size: 100% 100%;
+    /*background-size: 50% 100%;*/
     overflow: hidden;
     font-family: "HeaderFont";
 }
@@ -214,7 +216,7 @@
 .fly-in-text li{
     display: inline-block;
     margin-right: 20px;
-    font-size: 8em;
+    font-size: 4em;
     color: #fff;
     opacity: 1;
     transition: all 3s ease;
