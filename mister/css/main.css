@@ -216,7 +216,7 @@
 .fly-in-text li{
     display: inline-block;
     margin-right: 20px;
-    font-size: 4em;
+    font-size: 7em;
     color: #fff;
     opacity: 1;
     transition: all 3s ease;
@@ -230,8 +230,8 @@
     text-align: center;
     font-size: 2em;
     text-decoration: none;
-    color: dimgrey;
-    border: 5px solid dimgrey;
+    color: white;
+    border: 5px solid white;
     border-radius: 25px;
     padding: 5px;
     opacity: 1;
@@ -287,4 +287,12 @@
     100% {
         clip: rect(53px, 450px, 5px, 0);
     }
+}
+
+@media screen and (max-width: 600px){
+    .fly-in-text li{font-size: 4em;}
+}
+
+@media screen and (max-width: 400px){
+    .fly-in-text li{font-size: 3em;}
 }
