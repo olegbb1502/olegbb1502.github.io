@@ -40,23 +40,20 @@
     /*font-size: 40px;*/
     font-family: "HeaderFont";
 }
- .countdown{
-     display: flex;
-     justify-content: space-between;
-     font-size: 5em;
-     text-align: center;
-     list-style: none;
- }
+
 
 .ref{
     margin:20px;
     text-align: center;
 }
 .countdown {
+    display: flex;
+    justify-content: space-between;
     animation: glitch 3s steps(100) infinite;
     color: #fff;
-    font-size: 3em;
+    font-size: 5em;
     text-align: center;
+    list-style: none;
 }
 
 @media (min-width: 480px) {
@@ -66,7 +63,7 @@
 }
 
 @keyframes glitch {
-    0% { text-shadow: 3px 0 0 white, -3px 0 0 #0c33f5; filter: blur(0);}
+    0% { text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5; filter: blur(0);}
     1% { text-shadow: 3px 0 0 gray, -3px 0 0 #0c33f5; filter: blur(0);}
     2% { text-shadow: 3px 0 0 gray, -3px 0 0 #0c33f5; filter: blur(0);}
     3% { text-shadow: 3px 0 0 gray, -3px 0 0 #0c33f5; filter: blur(0);}
@@ -199,6 +196,10 @@
     font-family: "HeaderFont";
 }
 
+@keyframes underline {
+    0%{width: 0;}
+    100%{width: 60%;}
+}
 
 .content-wrap{
     position: absolute;
@@ -216,32 +217,33 @@
 .fly-in-text li{
     display: inline-block;
     margin-right: 20px;
-    font-size: 7em;
+    font-size: 15em;
     color: #fff;
     opacity: 1;
     transition: all 3s ease;
     font-family: "HeaderFont";
-    animation: glitch 3s steps(100) infinite;
+    /*animation: glitch 3s steps(100) infinite;*/
 }
 
 .fly-in-text li:nth-child(5){margin-right: 0;}
 
 .enter-button{
     display: block;
-    /*text-align: center;*/
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
     font-size: 2em;
     text-decoration: none;
     color: white;
-    /*border: 5px solid white;*/
-    /*border-radius: 25px;*/
-    /*padding: 5px 1px;*/
+    border: 2px solid white;
+    border-radius: 25px;
+    padding: 5px 15px;
     opacity: 1;
     margin-top: 30px;
     transition: all 3s ease 3s;
     font-family: "ParagrafFont";
 }
 
-.enter-button:hover{}
 
 .content-hidden .fly-in-text li{opacity: 0;}
 .content-hidden .fly-in-text li:nth-child(1){
@@ -288,10 +290,16 @@
     }
 }
 
-@media screen and (max-width: 600px){
-    .fly-in-text li{font-size: 4em;}
+@media screen and (max-width: 830px){
+    .fly-in-text li{font-size: 8em;}
+    .enter-button{font-size: 1.3em;}
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 530px){
+    .fly-in-text li{font-size: 4em;}
+    .enter-button{font-size: 1em;}
+}
+
+@media screen and (max-width: 354px){
     .fly-in-text li{font-size: 3em;}
 }
