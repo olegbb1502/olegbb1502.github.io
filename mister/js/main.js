@@ -56,8 +56,6 @@ $(window).on('mousemove click', function(e) {
 
 moveBackground();
 
-// $( ".glitch-img" ).mgGlitch({
-//     glitch: true,
-//     blend : false,
-//     scale: false
+// $( ".countdown" ).mgGlitch({
+//     glitch: true
 // });
