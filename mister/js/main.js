@@ -15,7 +15,7 @@ $(function () {
 });
 
 
-var deadline='2018-02-22 20:15:00';
+var deadline='2018-02-25 20:15:00';
 
 $('.countdown').downCount({
         date: deadline,
