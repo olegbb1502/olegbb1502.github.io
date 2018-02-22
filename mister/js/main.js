@@ -26,4 +26,8 @@ $('.countdown').downCount({
 
 
 
-// $( ".glitch-img" ).mgGlitch();
+// $( ".glitch-img" ).mgGlitch({
+//     glitch: true,
+//     blend : false,
+//     scale: false
+// });

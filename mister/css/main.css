@@ -221,45 +221,44 @@
     opacity: 1;
     transition: all 3s ease;
     font-family: "HeaderFont";
+    animation: glitch 3s steps(100) infinite;
 }
 
 .fly-in-text li:nth-child(5){margin-right: 0;}
 
 .enter-button{
     display: block;
-    text-align: center;
+    /*text-align: center;*/
     font-size: 2em;
     text-decoration: none;
     color: white;
-    border: 5px solid white;
-    border-radius: 25px;
-    padding: 5px;
+    /*border: 5px solid white;*/
+    /*border-radius: 25px;*/
+    /*padding: 5px 1px;*/
     opacity: 1;
     margin-top: 30px;
     transition: all 3s ease 3s;
     font-family: "ParagrafFont";
 }
 
+.enter-button:hover{}
+
 .content-hidden .fly-in-text li{opacity: 0;}
 .content-hidden .fly-in-text li:nth-child(1){
-    transform: translate3d(-60px, 0, 0);
+    transform: translate3d(-30px, 0, 0);
     -webkit-transform: translate3d(-60px, 0, 0);
 }
 .content-hidden .fly-in-text li:nth-child(2){
-    transform: translate3d(-30px, 0, 0);
+    transform: translate3d(-15px, 0, 0);
     -webkit-transform: translate3d(-30px, 0, 0);
 }
 .content-hidden .fly-in-text li:nth-child(3){
-    transform: translate3d(0px, 0, 0);
+    transform: translate3d(15px, 0, 0);
     -webkit-transform: translate3d(0, 0, 0);
 }
 .content-hidden .fly-in-text li:nth-child(4){
     transform: translate3d(30px, 0, 0);
     -webkit-transform: translate3d(30px, 0, 0);
-}
-.content-hidden .fly-in-text li:nth-child(5){
-    transform: translate3d(60px, 0, 0);
-    -webkit-transform: translate3d(60px, 0, 0);
 }
 
 .content-hidden .enter-button{
