@@ -417,7 +417,7 @@
 .blok {
     color: #FFF;
     cursor: pointer;
-    border: 4px solid #FFFFFF;
+    border: 2px solid #FFFFFF;
 }
 .blok:hover {
     background: #FFFFFF;
