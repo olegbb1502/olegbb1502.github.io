@@ -378,16 +378,18 @@
 
 .fly-in-text{
     list-style: none;
+    text-align: center;
 }
 
 .fly-in-text li{
     display: inline-block;
-    margin-right: 20px;
+    margin: 0px auto;
     font-size: 15em;
     color: #fff;
     opacity: 1;
     transition: all 3s ease;
     font-family: "HeaderFont";
+    text-align: center;
     /*animation: glitch 3s steps(100) infinite;*/
 }
 
