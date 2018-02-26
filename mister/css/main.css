@@ -54,8 +54,10 @@
     font-size: 5em;
     text-align: center;
     list-style: none;
-    margin: 50% auto;
+    width: 33.3%;
 }
+
+.countdown li{text-align: center; margin: 0 auto;}
 
 @media (min-width: 480px) {
     .countdown {
@@ -185,6 +187,7 @@
     position: relative;
     width: 400px;
     margin: 0 auto;
+    text-align: center;
 }
 
 @keyframes noise-anim {
@@ -480,11 +483,12 @@
 }
 
 @media screen and (max-width: 530px){
-    .fly-in-text li{font-size: 4em;}
-    .enter-button{font-size: 1em;}
-    .countdown{font-size: 2.5em;}
+    .fly-in-text li{font-size: 120px;}
+    .enter-button{font-size: 20px; width: 30vw;}
+    .countdown{font-size: 40px;}
+    .wrapper{text-align: center; margin: 0 auto;}
 }
 
 @media screen and (max-width: 354px){
-    .fly-in-text li{font-size: 3em;}
+    .fly-in-text li{font-size: 35px;}
 }
