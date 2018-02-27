@@ -273,7 +273,7 @@ p,i,span, a{font-family: "ParagrafFont";}
     text-align: left;
 }
 
-.contacts span{color: #ffd300; /*margin-right: 20px;*/ text-align: left;}
+.contacts span{color: #ffd300; margin-right: 20px; text-align: left;}
 
 .contacts a{color: #fff !important; text-decoration: underline;}
 .contacts a:hover{color: #ffd300 !important;}
