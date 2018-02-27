@@ -3,8 +3,15 @@
 *{
     margin: 0;
     padding: 0;
-
 }
+
+::-webkit-scrollbar { width: 3px; height: 3px;}
+::-webkit-scrollbar-button {  background-color: #ffd300; }
+::-webkit-scrollbar-track {  background-color: #000;}
+::-webkit-scrollbar-track-piece { background-color: #ffd300;}
+::-webkit-scrollbar-thumb { height: 50px; background-color: #ffd300; border-radius: 3px;}
+::-webkit-scrollbar-corner { background-color: #ffd300;}}
+::-webkit-resizer { background-color: #ffd300;}
 
 a:active, a:hover { outline: none; }
 
