@@ -21,7 +21,7 @@ $(function () {
             datasets: [
                 {
                     label: "Population (millions)",
-                    backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
+                    backgroundColor: ["#ffd47f", "#91bde3","#f06358","#6a8733","#44baca"],
                     data: [0.5,0.2,0.2,0.05,0.05]
                 }
             ]
@@ -44,7 +44,7 @@ $(function () {
             labels: ["Математика", "Українська мова та література", "Фізика або Іноземна мова",  "Бал атестату"],
             datasets: [
                 {
-                    backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
+                    backgroundColor: ["#ffd47f", "#91bde3","#f06358","#6a8733","#44baca"],
                     data: [0.5,0.2,0.25,0.05]
                 }
             ]

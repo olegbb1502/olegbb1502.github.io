@@ -32,7 +32,7 @@ body{background: #000;}
 }
 
 h1,h2,h3,h4{font-family: "HeaderFont";}
-p,i,span, a{font-family: "ParagrafFont";}
+p,li,span, a{font-family: "ParagrafFont";}
 .row{margin: 0;}
 
 .contact{
@@ -40,10 +40,10 @@ p,i,span, a{font-family: "ParagrafFont";}
     color: #000;
     padding: 10px 10px;
 }
-.contact:hover{
-    background: #000;
-    color: #ffd300;
-}
+/*.contact:hover{*/
+    /*background: #000;*/
+    /*color: #ffd300;*/
+/*}*/
 .top{
     display: flex;
     justify-content: flex-end;
@@ -151,10 +151,56 @@ p,i,span, a{font-family: "ParagrafFont";}
 
 #ex1{
     text-align: center;
+    margin: 50px auto;
 }
 
 #ex1 h2{font-size: 80px; margin: 10px auto; color: #ffd300;}
-#ex1 p{text-align: left; font-size: 30px; color:#fff;}
+#ex1 ul{list-style: none;}
+
+.list1 li:nth-child(1){
+    background-image: url("https://png.icons8.com/material/50/FFBE00/person-male.png");
+    background-repeat: no-repeat;
+    padding-left: 60px;
+    background-position: 0px 20px;
+}
+
+
+.list1 li:nth-child(2){
+    background-image: url("https://png.icons8.com/ios/50/FFBE00/source-code-filled.png");
+    background-repeat: no-repeat;
+    padding-left: 60px;
+    background-position: 0px 10px;
+}
+
+
+.list1 li:nth-child(3){
+    background-image: url("https://png.icons8.com/ios/50/FFBE00/math-filled.png");
+    background-repeat: no-repeat;
+    padding-left: 60px;
+    background-position: 0px 10px;
+}
+
+
+.list2 li:nth-child(1){
+    background-image: url("https://png.icons8.com/ios-glyphs/50/FFBE00/graduation-cap.png");
+    background-repeat: no-repeat;
+    padding-left: 60px;
+    background-position: 0px 20px;
+}
+
+.list2 li:nth-child(2){
+    background-image: url("https://png.icons8.com/ios/50/FFBE00/training-filled.png");
+    background-repeat: no-repeat;
+    padding-left: 60px;
+    background-position: 0px 20px;
+}
+.list2 li:nth-child(3){
+    background-image: url("https://png.icons8.com/ios/50/FFBE00/conference-background-selected-filled.png");
+    background-repeat: no-repeat;
+    padding-left: 60px;
+    background-position: 0px 20px;
+}
+#ex1 li{text-align: left; font-size: 25px; color:#fff; margin-top: 15px;}
 
 .ico{font-size: 50px; margin-right: 20px; color: #ffd300;}
 
@@ -162,6 +208,8 @@ p,i,span, a{font-family: "ParagrafFont";}
     margin: 40px auto;
     text-align: center;
 }
+
+/*.container{margin-right: 0;}*/
 
 #ex2 h2{font-size: 80px; margin: 10px auto; color: #ffd300;}
 
@@ -271,11 +319,37 @@ p,i,span, a{font-family: "ParagrafFont";}
     color: #fff !important;
     font-size: 40px;
     text-align: left;
+    list-style: none;
+
 }
 
-.contacts span{color: #ffd300; margin-right: 20px; text-align: left;}
+.contacts li:nth-child(1){
+    background-image: url("https://png.icons8.com/ios/50/FFBE00/marker-filled.png");
+    background-repeat: no-repeat;
+    padding-left: 60px;
+}
+.contacts li:nth-child(2){
+    background-image: url("https://png.icons8.com/metro/50/FFBE00/phone.png");
+    background-repeat: no-repeat;
+    padding-left: 60px;
+}
+.contacts li:nth-child(3){
+    background-image: url("https://png.icons8.com/ios/50/FFBE00/secured-letter-filled.png");
+    background-repeat: no-repeat;
+    padding-left: 60px;
+}
+.contacts li:nth-child(4){
+    background-image: url("https://png.icons8.com/windows/50/FFBE00/telegram-app.png");
+    background-repeat: no-repeat;
+    padding-left: 60px;
+}
+.contacts li:nth-child(5){
+    background-image: url("https://png.icons8.com/android/50/FFBE00/facebook.png");
+    background-repeat: no-repeat;
+    padding-left: 60px;
+}
 
-.contacts a{color: #fff !important; text-decoration: underline;}
+.contacts a{color: #fff !important; text-decoration: none;}
 .contacts a:hover{color: #ffd300 !important;}
 
 .footer{height: 150px; background: #ffd300; padding: 20px;}
@@ -284,3 +358,18 @@ p,i,span, a{font-family: "ParagrafFont";}
 .logo{margin: 15px 10px;}
 
 .logo img{width: 20%; height: 20%; filter: brightness(0);}
+
+@media screen and (max-width: 990px){
+    .contacts{padding-left: 25%; margin-top: 15px}
+    .list1 li:nth-child(1){background-size: 40px 40px; background-position: 0px 15px;}
+    .list1 li:nth-child(2){background-size: 35px 35px; background-position: 0px 0px;}
+    .list1 li:nth-child(3){background-size: 32px 32px; background-position: 0px 5px;}
+    .list2 li:nth-child(1){background-size: 40px 40px; background-position: 0px 15px;}
+    .list2 li:nth-child(2){background-size: 40px 40px; background-position: 0px 15px;}
+    .list2 li:nth-child(3){background-size: 40px 40px; background-position: 0px 0px;}
+    .special{margin: 3% auto;}
+}
+
+@-ms-viewport{
+    width: device-width;
+}
