@@ -21,12 +21,15 @@ $(function () {
             datasets: [
                 {
                     label: "Population (millions)",
-                    backgroundColor: ["#ffd47f", "#91bde3","#f06358","#6a8733","#44baca"],
+                    backgroundColor: ["#30a29a", "#42536c","#f06358","#f7d33e","#44baca"],
                     data: [0.5,0.2,0.2,0.05,0.05]
                 }
             ]
         },
         options: {
+            legend: {
+                display: false
+            },
             title: {
                 display: true,
                 text: 'Системний аналіз',
@@ -44,12 +47,15 @@ $(function () {
             labels: ["Математика", "Українська мова та література", "Фізика або Іноземна мова",  "Бал атестату"],
             datasets: [
                 {
-                    backgroundColor: ["#ffd47f", "#91bde3","#f06358","#6a8733","#44baca"],
+                    backgroundColor: ["#30a29a", "#f06358","#44baca","#f7d33e"],
                     data: [0.5,0.2,0.25,0.05]
                 }
             ]
         },
         options: {
+            legend: {
+                display: false
+            },
             title: {
                 display: true,
                 text: "Комп'ютерні науки",
