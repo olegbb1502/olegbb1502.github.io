@@ -1,7 +1,7 @@
 /*#ffd300;*/
 
 *{
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
 }
 
@@ -33,7 +33,18 @@ body{background: #000;}
 
 h1,h2,h3,h4{font-family: "HeaderFont";}
 p,li,span, a{font-family: "ParagrafFont";}
-.row{margin: 0;}
+.container{display: flex; justify-content: center;}
+
+.col-d-1{width: 10vw;}
+.col-d-2{width: 20vw;}
+.col-d-3{width: 30vw;}
+.col-d-4{width: 40vw;}
+.col-d-5{width: 50vw;}
+.col-d-6{width: 60vw;}
+.col-d-7{width: 70vw;}
+.col-d-8{width: 80vw;}
+.col-d-9{width: 90vw;}
+.col-d-10{width: 100vw;}
 
 .contact{
     font-size: 32px;
@@ -49,11 +60,15 @@ p,li,span, a{font-family: "ParagrafFont";}
     justify-content: flex-end;
 }
 
+.top a{margin: 0;}
+
+/*.col-xs*/
+
 .header{
     background: #ffd300;
     padding: 10px;
     text-align: center;
-    height: 100vh;
+    /*height: 100vh;*/
 }
 
 .info{
@@ -61,7 +76,7 @@ p,li,span, a{font-family: "ParagrafFont";}
     height: 100vh;
 }
 
-.info>h1{font-size: 8em; margin: 10vh auto 30px auto;}
+h1, h2{font-size: 8em; margin: 10vh auto 30px auto;}
 
 .slideDown{
     animation-name: slideDown;
@@ -154,14 +169,16 @@ p,li,span, a{font-family: "ParagrafFont";}
     margin: 50px auto;
 }
 
-#ex1 h2{font-size: 80px; margin: 10px auto; color: #ffd300;}
-#ex1 ul{list-style: none;}
+#ex1 h2{margin: 10px auto; color: #ffd300;}
+#ex1 ul{list-style: none; margin: 5% 8vw;}
+
+.list1 li, .list2 li{height: 90px;}
 
 .list1 li:nth-child(1){
     background-image: url("https://png.icons8.com/material/50/FFBE00/person-male.png");
     background-repeat: no-repeat;
     padding-left: 60px;
-    background-position: 0px 20px;
+    background-position: 0px 5px;
 }
 
 
@@ -169,7 +186,7 @@ p,li,span, a{font-family: "ParagrafFont";}
     background-image: url("https://png.icons8.com/ios/50/FFBE00/source-code-filled.png");
     background-repeat: no-repeat;
     padding-left: 60px;
-    background-position: 0px 10px;
+    background-position: 0px -10px;
 }
 
 
@@ -192,17 +209,17 @@ p,li,span, a{font-family: "ParagrafFont";}
     background-image: url("https://png.icons8.com/ios/50/FFBE00/training-filled.png");
     background-repeat: no-repeat;
     padding-left: 60px;
-    background-position: 0px 20px;
+    background-position: 0px 10px;
 }
 .list2 li:nth-child(3){
     background-image: url("https://png.icons8.com/ios/50/FFBE00/conference-background-selected-filled.png");
     background-repeat: no-repeat;
     padding-left: 60px;
-    background-position: 0px 20px;
+    background-position: 0px 10px;
 }
-#ex1 li{text-align: left; font-size: 25px; color:#fff; margin-top: 15px;}
+#ex1 li{text-align: left; font-size: 1.5vw; color:#fff; margin-top: 3vw;}
 
-.ico{font-size: 50px; margin-right: 20px; color: #ffd300;}
+.ico{font-size: 20vw; margin-right: 20px; color: #ffd300;}
 
 .section2{
     margin: 40px auto;
@@ -211,11 +228,11 @@ p,li,span, a{font-family: "ParagrafFont";}
 
 /*.container{margin-right: 0;}*/
 
-#ex2 h2{font-size: 80px; margin: 10px auto; color: #ffd300;}
+#ex2 h2{margin: 10px auto; color: #ffd300;}
 
 .special{
     display: block;
-    height: 550px;
+    /*height: 550px;*/
     margin: 30px 30px;
     background:  #ffd300;
     padding: 30px;
@@ -223,36 +240,35 @@ p,li,span, a{font-family: "ParagrafFont";}
     border-radius: 15px;
 }
 
-.special h3{font-size: 50px}
+.special h3{font-size: 80px}
 
 .special-button{
     display: block;
     padding: 15px;
-    width: 300px;
-    font-size: 2em;
+    font-size: 3vw;
     background: #000;
     color: #fff !important;
     text-decoration: none !important;
     border-radius: 15px;
-    margin: 30px auto;
+    margin: 30px auto 0 auto;
 }
 
 .special-button:hover{color: #fff; text-decoration: none;}
 
 #ex3{text-align: center; margin: 30px auto;}
 
-#ex3 h2{font-size: 80px; margin: 10px auto; color: #ffd300;}
+#ex3 h2{ margin: 10px auto; color: #ffd300;}
 
-.charts{margin: 20px auto; display: flex; justify-content: center;}
+/*.charts{margin: 20px auto; display: flex; justify-content: center;}*/
 
-#sisAnal{margin: 10px auto;}
+#sisAnal{margin: 10px auto; font-size: 5vw;}
 #compScience {margin: 10px auto;}
 
 .special img{
     display: block;
-    width: 90%;
-    height: 300px;
-    margin: 0 auto;
+    width: 70%;
+    height: 40%;
+    margin: 10px auto;
 }
 
 .section5{
@@ -266,6 +282,7 @@ p,li,span, a{font-family: "ParagrafFont";}
     margin: 20px auto;
     position: relative;
     text-align: center;
+    height: 80vh;
 }
 .slider ul, .slider li {
     padding: 0;
@@ -279,7 +296,7 @@ p,li,span, a{font-family: "ParagrafFont";}
 .slider ul h2 {
     margin-top: 15px;
     text-align: center;color: #000;
-    font-size: 50px;
+    /*font-size: 10vw;*/
 }
 .slider ul p {
     font-style: italic;
@@ -311,9 +328,7 @@ p,li,span, a{font-family: "ParagrafFont";}
     text-align: center;
 }
 
-.section6 h2{font-size: 80px; margin: 10px auto; color: #ffd300;}
-
-.section6 .row{margin-top: 30px;}
+.section6 h2{ margin: 10px auto; color: #ffd300;}
 
 .contacts{
     color: #fff !important;
@@ -352,15 +367,18 @@ p,li,span, a{font-family: "ParagrafFont";}
 .contacts a{color: #fff !important; text-decoration: none;}
 .contacts a:hover{color: #ffd300 !important;}
 
-.footer{height: 150px; background: #ffd300; padding: 20px;}
-.footer p{color: #000; font-size: 1.5em;}
+.foot{margin: 5%;}
+
+.footer{background: #ffd300; padding: 20px;}
+.footer p{color: #000; font-size: 1.5vw;}
 
 .logo{margin: 15px 10px;}
 
-.logo img{width: 20%; height: 20%; filter: brightness(0);}
+.logo img{width: 40vw; filter: brightness(0);}
 
 @media screen and (max-width: 990px){
-    .contacts{padding-left: 25%; margin-top: 15px}
+    h1,h2{font-size: 10vw;}
+    .contacts{margin-top: 15px; font-size: 4vw;}
     .list1 li:nth-child(1){background-size: 40px 40px; background-position: 0px 15px;}
     .list1 li:nth-child(2){background-size: 35px 35px; background-position: 0px 0px;}
     .list1 li:nth-child(3){background-size: 32px 32px; background-position: 0px 5px;}
@@ -368,8 +386,95 @@ p,li,span, a{font-family: "ParagrafFont";}
     .list2 li:nth-child(2){background-size: 40px 40px; background-position: 0px 15px;}
     .list2 li:nth-child(3){background-size: 40px 40px; background-position: 0px 0px;}
     .special{margin: 3% auto;}
+    .special-button{font-size: 4vw;}
+    #ex1 li{font-size: 3vw;}
 }
 
-@-ms-viewport{
-    width: device-width;
+@media screen and (max-width: 768px){
+    a>img{width: 8vw; height: 8vw;}
+    .info>h1{font-size: 15vw;}
+    .slideDown{font-size: 12vw;}
+    .info p{font-size: 4vw; width: 70vw;}
+    .container{display: block;}
+    .col-m-1{width: 10vw;}
+    .col-m-2{width: 20vw;}
+    .col-m-3{width: 30vw;}
+    .col-m-4{width: 40vw;}
+    .col-m-5{width: 50vw;}
+    .col-m-6{width: 60vw;}
+    .col-m-7{width: 70vw;}
+    .col-m-8{width: 80vw;}
+    .col-m-9{width: 90vw;}
+    .col-m-10{width: 100vw;}
+
+    #ex1{height: 100%;}
+
+    #ex1 ul{margin: 0 auto;}
+    /*#ex1 li{font-size: 4vw;}*/
+    .slider ul li p{width: 100%; font-size: 5vw;}
+
+    .foot{margin: 0;}
+
+    .contacts{padding: 0; font-size: 6vw;}
+    .contacts li:nth-child(1){
+        padding-left: 50px;
+        background-size: 30px 30px;
+    }
+    .contacts li:nth-child(2){
+        padding-left: 50px;
+        background-size: 30px 30px;
+    }
+    .contacts li:nth-child(3){
+        padding-left: 50px;
+        background-size: 30px 30px;
+    }
+    .contacts li:nth-child(4){
+        padding-left: 50px;
+        background-size: 30px 30px;
+    }
+    .contacts li:nth-child(5){
+        padding-left: 50px;
+        background-size: 30px 30px;
+    }
+
+    .footer p{font-size: 3vw;}
+}
+
+
+@media screen and (max-width: 550px){
+    .special h3{font-size: 7vw;}
+    .contacts li:nth-child(1){
+        padding-left: 30px;
+        background-size: 20px 20px;
+    }
+    .contacts li:nth-child(2){
+        padding-left: 30px;
+        background-size: 20px 20px;
+    }
+    .contacts li:nth-child(3){
+        padding-left: 30px;
+        background-size: 20px 20px;
+    }
+    .contacts li:nth-child(4){
+        padding-left: 30px;
+        background-size: 20px 20px;
+    }
+    .contacts li:nth-child(5){
+        padding-left: 30px;
+        background-size: 20px 20px;
+    }
+
+    .footer{height: auto;}
+}
+
+@media screen and (max-width: 325px){
+    .more{width: 70vw;}
+    #ex1 li{font-size: 5vw;}
+    .list1 li:nth-child(1){padding-left: 40px;}
+    .list1 li:nth-child(2){padding-left: 40px;}
+    .list1 li:nth-child(3){padding-left: 40px;}
+    .list2 li:nth-child(1){padding-left: 42px;   margin-bottom: 40px;}
+    .list2 li:nth-child(2){padding-left: 42px;}
+    .list2 li:nth-child(3){padding-left: 42px;}
+
 }
