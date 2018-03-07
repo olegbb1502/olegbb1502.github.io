@@ -264,8 +264,10 @@ h1, h2{font-size: 4em; margin: 10vh auto 30px auto; letter-spacing: 5px;}
 
 /*.charts{margin: 20px auto; display: flex; justify-content: center;}*/
 
-#sisAnal{margin: 10px auto; font-size: 5vw;}
-#compScience {margin: 10px auto;}
+.chart{margin: 10px 20px;}
+
+#sisAnal{margin: 10px 10px;}
+#compScience {margin: 10px 10px;}
 
 .special img{
     display: block;
@@ -285,7 +287,7 @@ h1, h2{font-size: 4em; margin: 10vh auto 30px auto; letter-spacing: 5px;}
     margin: 20px auto;
     position: relative;
     text-align: center;
-    height: 80vh;
+    /*height: 80vh;*/
 }
 .slider ul, .slider li {
     padding: 0;
@@ -335,36 +337,46 @@ h1, h2{font-size: 4em; margin: 10vh auto 30px auto; letter-spacing: 5px;}
 
 .contacts{
     color: #fff !important;
-    font-size: 40px;
+    font-size: 25px;
     text-align: left;
     list-style: none;
-
+    margin-top: 5%;
 }
 
 .contacts li:nth-child(1){
     background-image: url("https://png.icons8.com/ios/50/FFBE00/marker-filled.png");
     background-repeat: no-repeat;
-    padding-left: 60px;
+    background-size: 25px 25px;
+    padding-left: 40px;
+    margin: 15px;
 }
 .contacts li:nth-child(2){
     background-image: url("https://png.icons8.com/metro/50/FFBE00/phone.png");
     background-repeat: no-repeat;
-    padding-left: 60px;
+    background-size: 25px 25px;
+    padding-left: 40px;
+    margin: 15px;
 }
 .contacts li:nth-child(3){
     background-image: url("https://png.icons8.com/ios/50/FFBE00/secured-letter-filled.png");
     background-repeat: no-repeat;
-    padding-left: 60px;
+    background-size: 25px 25px;
+    padding-left: 40px;
+    margin: 15px;
 }
 .contacts li:nth-child(4){
     background-image: url("https://png.icons8.com/windows/50/FFBE00/telegram-app.png");
     background-repeat: no-repeat;
-    padding-left: 60px;
+    background-size: 25px 25px;
+    padding-left: 40px;
+    margin: 15px;
 }
 .contacts li:nth-child(5){
     background-image: url("https://png.icons8.com/android/50/FFBE00/facebook.png");
     background-repeat: no-repeat;
-    padding-left: 60px;
+    background-size: 25px 25px;
+    padding-left: 40px;
+    margin: 15px;
 }
 
 .contacts a{color: #fff !important; text-decoration: none;}
@@ -379,6 +391,11 @@ h1, h2{font-size: 4em; margin: 10vh auto 30px auto; letter-spacing: 5px;}
 
 .logo img{width: 20vw; filter: brightness(0);}
 
+@media screen and (max-width: 1024px){
+    .special h3{font-size: 3vw}
+    .special-button{font-size: 2vw; margin-top: 5px}
+}
+
 @media screen and (max-width: 990px){
     h1,h2{font-size: 10vw;}
     .contacts{margin-top: 15px; font-size: 4vw;}
@@ -389,15 +406,17 @@ h1, h2{font-size: 4em; margin: 10vh auto 30px auto; letter-spacing: 5px;}
     .list2 li:nth-child(2){background-size: 40px 40px; background-position: 0px 15px;}
     .list2 li:nth-child(3){background-size: 40px 40px; background-position: 0px 0px;}
     .special{margin: 3% auto;}
-    .special-button{font-size: 4vw;}
+    .special-button{font-size: 4vw; width: 60%;}
     #ex1 li{font-size: 3vw;}
+    .chart{margin: 2px auto}
+    #sisAnal, #compScience{margin: 0}
 }
 
 @media screen and (max-width: 768px){
     a>img{width: 8vw; height: 8vw;}
-    .info>h1{font-size: 15vw;}
-    .slideDown{font-size: 12vw;}
-    .info p{font-size: 4vw; width: 70vw;}
+    .info>h1{font-size: 12vw;}
+    .slideDown{font-size: 10vw;}
+    .info p{font-size: 2vw; width: 70vw;}
     .container{display: block;}
     .col-m-1{width: 10vw;}
     .col-m-2{width: 20vw;}
@@ -409,16 +428,18 @@ h1, h2{font-size: 4em; margin: 10vh auto 30px auto; letter-spacing: 5px;}
     .col-m-8{width: 80vw;}
     .col-m-9{width: 90vw;}
     .col-m-10{width: 100vw;}
+    .special h3{font-size: 3.5vw;}
+    .special-button{font-size: 2vw;}
 
     #ex1{height: 100%;}
 
     #ex1 ul{margin: 0 auto;}
     /*#ex1 li{font-size: 4vw;}*/
-    .slider ul li p{width: 100%; font-size: 5vw;}
+    .slider ul li p{width: 100%;}
 
     .foot{margin: 0;}
 
-    .contacts{padding: 0; font-size: 6vw;}
+    .contacts{padding: 0; margin: 2px auto}
     .contacts li:nth-child(1){
         padding-left: 50px;
         background-size: 30px 30px;
