@@ -33,7 +33,7 @@ body{background: #000;}
 
 h1,h2,h3,h4{font-family: "HeaderFont";}
 p,li,span, a{font-family: "ParagrafFont";}
-.container{display: flex; justify-content: center;}
+.container{display: flex; justify-content: center; margin: 0}
 
 .col-d-1{width: 10vw;}
 .col-d-2{width: 20vw;}
@@ -76,7 +76,9 @@ p,li,span, a{font-family: "ParagrafFont";}
     height: 100vh;
 }
 
-h1, h2{font-size: 8em; margin: 10vh auto 30px auto;}
+.info h1{font-size: 6em;}
+
+h1, h2{font-size: 4em; margin: 10vh auto 30px auto; letter-spacing: 5px;}
 
 .slideDown{
     animation-name: slideDown;
@@ -170,7 +172,7 @@ h1, h2{font-size: 8em; margin: 10vh auto 30px auto;}
 }
 
 #ex1 h2{margin: 10px auto; color: #ffd300;}
-#ex1 ul{list-style: none; margin: 5% 8vw;}
+#ex1 ul{list-style: none; margin: 20px 3%;}
 
 .list1 li, .list2 li{height: 90px;}
 
@@ -178,7 +180,7 @@ h1, h2{font-size: 8em; margin: 10vh auto 30px auto;}
     background-image: url("https://png.icons8.com/material/50/FFBE00/person-male.png");
     background-repeat: no-repeat;
     padding-left: 60px;
-    background-position: 0px 5px;
+    background-position: 0px 50%;
 }
 
 
@@ -186,7 +188,7 @@ h1, h2{font-size: 8em; margin: 10vh auto 30px auto;}
     background-image: url("https://png.icons8.com/ios/50/FFBE00/source-code-filled.png");
     background-repeat: no-repeat;
     padding-left: 60px;
-    background-position: 0px -10px;
+    background-position: 0px 25%;
 }
 
 
@@ -240,17 +242,18 @@ h1, h2{font-size: 8em; margin: 10vh auto 30px auto;}
     border-radius: 15px;
 }
 
-.special h3{font-size: 80px}
+.special h3{font-size: 60px}
 
 .special-button{
     display: block;
     padding: 15px;
-    font-size: 3vw;
+    font-size: 25px;
     background: #000;
     color: #fff !important;
     text-decoration: none !important;
     border-radius: 15px;
     margin: 30px auto 0 auto;
+    width: 250px;
 }
 
 .special-button:hover{color: #fff; text-decoration: none;}
@@ -267,7 +270,7 @@ h1, h2{font-size: 8em; margin: 10vh auto 30px auto;}
 .special img{
     display: block;
     width: 70%;
-    height: 40%;
+    height: 70%;
     margin: 10px auto;
 }
 
@@ -296,7 +299,7 @@ h1, h2{font-size: 8em; margin: 10vh auto 30px auto;}
 .slider ul h2 {
     margin-top: 15px;
     text-align: center;color: #000;
-    /*font-size: 10vw;*/
+    font-size: 4em;
 }
 .slider ul p {
     font-style: italic;
@@ -370,11 +373,11 @@ h1, h2{font-size: 8em; margin: 10vh auto 30px auto;}
 .foot{margin: 5%;}
 
 .footer{background: #ffd300; padding: 20px;}
-.footer p{color: #000; font-size: 1.5vw;}
+.footer p{color: #000; font-size: 1vw;}
 
 .logo{margin: 15px 10px;}
 
-.logo img{width: 40vw; filter: brightness(0);}
+.logo img{width: 20vw; filter: brightness(0);}
 
 @media screen and (max-width: 990px){
     h1,h2{font-size: 10vw;}

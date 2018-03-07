@@ -11,6 +11,7 @@ $(document).ready(function(){
 
 Chart.defaults.global.defaultFontSize = 20;
 Chart.defaults.global.defaultFontColor = '#fff';
+Chart.defaults.global.defaultFontFamily = 'HeaderFont';
 
 $(function () {
 
