@@ -9,63 +9,96 @@ $(document).ready(function(){
     });
 });
 
-Chart.defaults.global.defaultFontSize = 20;
-Chart.defaults.global.defaultFontColor = '#fff';
-Chart.defaults.global.defaultFontFamily = 'HeaderFont';
+new Chart(document.getElementById("pie-chart1"), {
+    type: 'pie',
+    data: {
+        labels: ["Математика", "Українська мова та література", "Фізика або Іноземна мова", "Додаткові бали", "ФДП"],
+        datasets: [{
+            backgroundColor: ["#5ebcbc", "#f87","#fd4","#27f","#77b"],
+            data: [0.5,0.2,0.2,0.05,0.05]
+        }]
+    },
+    options: {
+        legend:{display:false}
+    }
+});
 
-$(function () {
+new Chart(document.getElementById("pie-chart2"), {
+    type: 'pie',
+    data: {
+        labels: ["Математика", "Українська мова та література", "Фізика або Іноземна мова", "Додаткові бали America"],
+        datasets: [{
+            backgroundColor: ["#5ebcbc", "#f87","#fd4","#27f"],
+            data: [0.5,0.2,0.25,0.05]
+        }]
+    },
+    options: {
+        legend:{display:false}
+    }
+});
 
-    new Chart(document.getElementById("sisAnal"), {
-        type: 'doughnut',
-        data: {
-            labels: ["Математика", "Українська мова та література", "Фізика або Іноземна мова", "Додаткові бали", "Бал атестату"],
-            datasets: [
-                {
-                    label: "Population (millions)",
-                    backgroundColor: ["#30a29a", "#42536c","#f06358","#f7d33e","#44baca"],
-                    data: [0.5,0.2,0.2,0.05,0.05]
-                }
-            ]
-        },
-        options: {
-            legend: {
-                display: false
-            },
-            title: {
-                display: true,
-                text: 'Системний аналіз',
-                fontSize: 50,
-                fontColor: '#ffd300'
-            }
-        }
-    });
-})
 
-$(function () {
-    new Chart(document.getElementById("compScience"), {
-        type: 'doughnut',
-        data: {
-            labels: ["Математика", "Українська мова та література", "Фізика або Іноземна мова",  "Бал атестату"],
-            datasets: [
-                {
-                    backgroundColor: ["#30a29a", "#f06358","#44baca","#f7d33e"],
-                    data: [0.5,0.2,0.25,0.05]
-                }
-            ]
-        },
-        options: {
-            legend: {
-                display: false
-            },
-            title: {
-                display: true,
-                text: "Комп'ютерні науки",
-                fontSize: 50,
-                fontColor: '#ffd300'
-            }
-        }
-    });
-})
+// // google.charts.load("current", {packages:["corechart"]});
+// // google.charts.setOnLoadCallback(drawChart1);
+// // google.charts.setOnLoadCallback(drawChart2);
+// function drawChart1() {
+//     var data = google.visualization.arrayToDataTable([
+//         ['Предмет', 'Коефіцієнт'],
+//         ['Математика',  0.5],
+//         ['Українська мова та література',  0.2],
+//         ['Фізика або Іноземна мова', 0.2],
+//         ['Додаткові бали', 0.05],
+//         ['ФДП', 0.05]
+//     ]);
+//
+//     var options = {
+//         'width': 700,
+//         'height': 600,
+//         pieHole: 0.1,
+//         legend: 'none',
+//         pieSliceText: 'none',
+//         slices: {
+//             0: { color: '#5e5e9a' },
+//             1: { color: '#fd4' },
+//             2: {color: '#7dd'},
+//             3: {color: '#f87'},
+//             4: {color: '#979df1'},
+//             5: {color: '#3aa'}
+//         }
+//     };
+//
+//     // var chart = new google.visualization.PieChart(document.getElementById('piechart1'));
+//     // chart.draw(data, options);
+// }
+//
+//
+// function drawChart2() {
+//     var data = google.visualization.arrayToDataTable([
+//         ['Предмет', 'Коефіцієнт'],
+//         ['Математика',  0.5],
+//         ['Українська мова та література',  0.2],
+//         ['Фізика або Іноземна мова', 0.25],
+//         ['Додаткові бали', 0.05]
+//     ]);
+//
+//     var options = {
+//         'width': 700,
+//         'height': 600,
+//         pieHole: 0.1,
+//         legend: 'none',
+//         pieSliceText: 'none',
+//         slices: {
+//             0: { color: '#6a6fae' },
+//             1: { color: '#fd4' },
+//             2: {color: '#7dd'},
+//             3: {color: '#f87'},
+//             4: {color: '#77b'}
+//         }
+//     };
+//
+//     // var chart = new google.visualization.PieChart(document.getElementById('piechart2'));
+//     // chart.draw(data, options);
+// }
 
 $(document).ready(function() {
     $(".slider").each(function() {
@@ -135,3 +168,5 @@ $("a.topLink").click(function() {
     $('.modalwindow').fadeOut(1000);
     return false;
 });
+
+
