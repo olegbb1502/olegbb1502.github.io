@@ -8,6 +8,7 @@
     <title>Абітурієнт ІПСА</title>
 
     <!--<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">-->
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.min.css">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <!--<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>-->
@@ -22,8 +23,7 @@
                 <a href="https://www.facebook.com/studrada.iasa/"><i class="fab fa-facebook"></i></a>
             </div>
             <div class="info">
-                <h1>ІПСА</h1>
-                <h2 id="anim_block" class="slideDown">Твій шлях до успіху</h2>
+                <h1>ІПСА - твій шлях до успіху</h1>
                 <p>ІНСТИТУТ ПРИКЛАДНОГО СИСТЕМНОГО АНАЛІЗУ НАЦІОНАЛЬНИЙ ТЕХНІЧНИЙ УНІВЕРСИТЕТ УКРАЇНИ “КИЇВСЬКИЙ
                     ПОЛІТЕХНІЧНИЙ ІНСТИТУТ ІМ. ІГОРЯ СІКОРСЬКОГО”</p>
                 <a href="#ex1" class="button">БІЛЬШЕ</a>
@@ -76,16 +76,16 @@
                     </div>
                 </section>
             <div class="section2">
-                    <h2>Спеціальності</h2>
+                    <h2>Кафедри</h2>
                     <div class="container ">
                             <div class="col-d-2 col-s-5 col-m-6 special">
                                 <img src="images/sa.png" alt="sa">
-                                <h3>Системний аналіз</h3>
+                                <h3>Математичні методи системного аналізу</h3>
                                 <a class="button" href="http://mmsa.kpi.ua/prospective-student">ДЕТАЛЬНІШЕ</a>
                             </div>
                             <div class="col-d-2 col-s-5 col-m-6 special">
                                 <img src="images/KN.PNG" alt="kn">
-                                <h3>Комп’ютерні науки</h3>
+                                <h3 id="kn">Системне проектування</h3>
                                 <a class="button" href="http://cad.kpi.ua/uk/vstup/bakalavr-na-bazi-povnoi-serednoi-osviti-serednoi-shkoli">ДЕТАЛЬНІШЕ</a>
                             </div>
                     </div>
@@ -105,39 +105,31 @@
             </div>
             <div class="section4"></div>
             <div class="section5">
-                <div class="slider">
-                    <ul>
-                        <li>
-                            <div class="slider1">
-                                <img class="photo" src="https://s.dou.ua/assets/img/icon.png" alt="dou">
-                                <h2 class="hf">DOU.UA</h2>
-                                <p>«Престижний, складний для навчання, дає актуальні знання й корисні для роботи в ІТ знання і професійні зв’язки»</p>
-                            </div>
-                            </li>
-                            <li>
-                                <div class="slider2">
-                                    <img class="photo" src="https://scontent.fiev12-1.fna.fbcdn.net/v/t1.0-1/27072908_1541753215938099_8088812512590569363_n.jpg?oh=67d5cc90d6780c80e86fe532f3a8172b&oe=5B4724A3" alt="8tag" height="40" width="40">
-                                    <h2 class="hf">8TAG</h2>
-                                    <p>«Найважливіші навички, які можна отримати в даному інституті, - здатність швидко та якісно вирішувати складні,   не типові задачі, контрулювати ситуацію»</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="slider3">
-                                    <img class="photo" src="https://s.dou.ua/assets/img/icon.png" alt="dou">
-                                    <h2 class="hf">DOU.UA</h2>
-                                    <p>«Випускники здатні проектувати комп'ютерні системи для прийняття рішень і управління процесами в макроекономічних, технічних, фізичних та екологічних системах.»</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="slider4">
-                                    <img class="photo" src="https://pbs.twimg.com/profile_images/925717136281976832/UUA8Cz6q_400x400.jpg" alt="cisco">
-                                    <h2 class="hf">CISCO</h2>
-                                    <p>«ІПСА орієнтується на більш детальне вивчення теоретичних основ технологій. Що дає змогу швидко засвоїти нові технології.»</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-            </div>
+                <div class="peppermint peppermint-inactive" id="peppermint">
+                    <figure>
+                        <img class="photo" src="https://s.dou.ua/assets/img/icon.png" alt="dou">
+                        <h2 class="hf">DOU.UA</h2>
+                        <p>«Престижний, складний для навчання, дає актуальні знання й корисні для роботи в ІТ знання і професійні зв’язки»</p>
+                    </figure>
+
+                    <figure>
+                        <img class="photo" src="https://scontent.fiev12-1.fna.fbcdn.net/v/t1.0-1/27072908_1541753215938099_8088812512590569363_n.jpg?oh=67d5cc90d6780c80e86fe532f3a8172b&oe=5B4724A3" alt="8tag" height="40" width="40">
+                        <h2 class="hf">8TAG</h2>
+                        <p>«Найважливіші навички, які можна отримати в даному інституті, - здатність швидко та якісно вирішувати складні,   не типові задачі, контрулювати ситуацію»</p>
+                    </figure>
+
+                    <figure>
+                        <img class="photo" src="https://s.dou.ua/assets/img/icon.png" alt="dou">
+                        <h2 class="hf">DOU.UA</h2>
+                        <p>«Випускники здатні проектувати комп'ютерні системи для прийняття рішень і управління процесами в макроекономічних, технічних, фізичних та екологічних системах.»</p>
+                    </figure>
+
+                    <figure>
+                        <img class="photo" src="https://pbs.twimg.com/profile_images/925717136281976832/UUA8Cz6q_400x400.jpg" alt="cisco">
+                        <h2 class="hf">CISCO</h2>
+                        <p>«ІПСА орієнтується на більш детальне вивчення теоретичних основ технологій. Що дає змогу швидко засвоїти нові технології.»</p>
+                    </figure>
+                </div>
         </div>
         <div class="section6">
             <h2>Зв'язок</h2>
@@ -185,8 +177,6 @@
         <p>© IASA Student Council. All Rights Reserved.</p>
     </div>
     </div>
-
-    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
