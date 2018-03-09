@@ -41,7 +41,8 @@ p,li,span, a{font-family: "ParagrafFont";}
 h1{font-size: 10vh;}
 h2{font-size: 7vh;}
 h3{font-size: 4vh;}
-p,a,li{font-size: 3vh; text-align: center}
+li{font-size: 1.5vw;  text-align: left}
+p,a{font-size: 1.5vw;  text-align: center}
 a{text-decoration: none;}
 ul{list-style: none;}
 
@@ -65,9 +66,16 @@ ul{list-style: none;}
     text-align: center;
 }
 
-.top{
-    display: block;
-    text-align: right;
+.top{float: right; margin-right: 35px}
+.top a{
+    color: #000000;
+    padding: 10px;
+    font-size: 2vw;
+}
+fa-facebook{width: 25px}
+.top a:hover{
+    background: #000;
+    color: var(--yelow);
 }
 
 .top img{width: 30px; height: 30px}
@@ -152,7 +160,7 @@ ul{list-style: none;}
     color: var(--white);
     padding: 15px;
     margin-top: 20px;
-    width: 20vw;
+    width: 18vw;
     border-radius: 15px;
 }
 
@@ -165,63 +173,20 @@ ul{list-style: none;}
 #ex1 h2{color: var(--yelow);}
 
 .list2,.list1{display: flex; flex-direction: column; margin: 20px 4%;}
-.list1 li, .list2 li{text-align: left; margin: 15px; color: white}
 
-.list1 li:nth-child(1){
-    background-image: url("https://png.icons8.com/material/50/FFBE00/person-male.png");
-    background-repeat: no-repeat;
-    padding-left: 60px;
-    background-position: 0px 60%;
-}
-
-
-.list1 li:nth-child(2){
-    background-image: url("https://png.icons8.com/ios/50/FFBE00/source-code-filled.png");
-    background-repeat: no-repeat;
-    padding-left: 60px;
-    width: 20vw;
-    background-position: 0px 50%;
-}
-
-
-.list1 li:nth-child(3){
-    background-image: url("https://png.icons8.com/ios/50/FFBE00/math-filled.png");
-    background-repeat: no-repeat;
-    padding-left: 60px;
-    background-position: 0px 50%;
-}
-
-
-.list2 li:nth-child(1){
-    background-image: url("https://png.icons8.com/ios-glyphs/50/FFBE00/graduation-cap.png");
-    background-repeat: no-repeat;
-    padding-left: 60px;
-    background-position: 0px 50%;
-}
-
-.list2 li:nth-child(2){
-    background-image: url("https://png.icons8.com/ios/50/FFBE00/training-filled.png");
-    background-repeat: no-repeat;
-    padding-left: 60px;
-    background-position: 0px 50%;
-}
-.list2 li:nth-child(3){
-    background-image: url("https://png.icons8.com/ios/50/FFBE00/conference-background-selected-filled.png");
-    background-repeat: no-repeat;
-    padding-left: 60px;
-    background-position: 0px 50%;
-}
+.list{display: flex; justify-content: flex-start; flex-direction:row; height: 120px;}
+.descr{color: var(--white); text-align: left;}
+.ico{color: var(--yelow);margin-right: 3%; margin-top: 3%; text-align: left}
 
 .section2{
     text-align: center;
-    height: 100vh;
     margin: 20px auto;
 }
 
-.section2 h2{color: var(--yelow);}
+.section2 h2{color: var(--yelow); position: relative}
 
-.special{margin: 20px 4%; background: var(--yelow); height: 70vh; padding: 15px; border-radius: 15px;}
-.special img{height: 50vh; width: 25vw;}
+.special{margin: 20px 3%; background: var(--yelow); padding: 15px; border-radius: 15px;}
+.special img{height: 60%; width: 60%;}
 
 .section3{
     text-align: center;
@@ -257,7 +222,6 @@ ul{list-style: none;}
     font-size: 3vw;
 }
 .slider ul p {
-    font-style: italic;
     font-size: 20px;
 }
 .slider ul li {
@@ -284,46 +248,13 @@ ul{list-style: none;}
 .section6{padding: 20px;}
 .section6 h2{text-align: center; color: var(--yelow); margin-bottom: 15px;}
 
-.contacts{margin: 4% 4%; display: flex; flex-direction: column;}
-.contacts li{text-align: left; color: white;}
-.contacts a{color: white;}
-.contacts a:hover{color: var(--yelow);}
-
-.contacts li:nth-child(1){
-    background-image: url("https://png.icons8.com/ios/50/FFBE00/marker-filled.png");
-    background-repeat: no-repeat;
-    background-size: 25px 25px;
-    padding-left: 40px;
-    margin: 15px;
-}
-.contacts li:nth-child(2){
-    background-image: url("https://png.icons8.com/metro/50/FFBE00/phone.png");
-    background-repeat: no-repeat;
-    background-size: 25px 25px;
-    padding-left: 40px;
-    margin: 15px;
-}
-.contacts li:nth-child(3){
-    background-image: url("https://png.icons8.com/ios/50/FFBE00/secured-letter-filled.png");
-    background-repeat: no-repeat;
-    background-size: 25px 25px;
-    padding-left: 40px;
-    margin: 15px;
-}
-.contacts li:nth-child(4){
-    background-image: url("https://png.icons8.com/windows/50/FFBE00/telegram-app.png");
-    background-repeat: no-repeat;
-    background-size: 25px 25px;
-    padding-left: 40px;
-    margin: 15px;
-}
-.contacts li:nth-child(5){
-    background-image: url("https://png.icons8.com/android/50/FFBE00/facebook.png");
-    background-repeat: no-repeat;
-    background-size: 25px 25px;
-    padding-left: 40px;
-    margin: 15px;
-}
+.contacts{margin-top: 5%}
+.contact{display: flex;}
+.contact a{color: white; font-size: 2vw;}
+.contact a:hover{color: var(--yelow);}
+.descr-cont{color: var(--white); text-align: left; font-size: 2vw;}
+.ico-cont{color: var(--yelow);margin-right: 3%; margin-top: 2%;}
+.ico-cont, .descr-cont{margin-left: 30px}
 
 .footer{
     background: var(--yelow);
@@ -344,13 +275,19 @@ ul{list-style: none;}
     .col-s-9{width: 90vw;}
     .col-s-10{width: 100vw;}
     .container{display: flex; flex-direction: column;}
-    .list1, .list2{margin: 10px auto;}
-    .list1 li:nth-child(2){width: 80%}
+    .top{margin-right: 0}
+    .ico, .descr{text-align: left; font-size: 3vw; margin-left: 30px;}
+    li:nth-child(3){width: 100%;}
+    .descr-ch{margin-left: 25px;}
+    .child{margin-top: 0}
     .section2{height: 100%}
     .special{margin: 20px auto;}
     .special img{width: 80%;}
     .charts{display: flex; justify-content: center; flex-direction: row}
-    .contacts{margin: 20px auto}
+    .contacts{margin: 20px 25%;}
+    .ico-cont{font-size: 3vw;}
+    .descr-cont{font-size: 4vw;}
+    .descr-cont a{font-size: 4vw;}
     .footer img{width: 20vw;}
     .footer p{font-size: 1.2vw;}
 }
@@ -365,17 +302,41 @@ ul{list-style: none;}
     .col-m-8{width: 80vw;}
     .col-m-9{width: 90vw;}
     .col-m-10{width: 100vw;}
-    .charts{display: flex; justify-content: center; flex-direction: column; margin: 20px auto}
+    a,p{font-size: 3vw;}
+    h2{font-size: 7vw;}
+    .top a{font-size: 4vw;}
+    .info{width: 90vw;}
+    .info p{margin-bottom: 80%;}
+    .list2{margin-top: -15px;}
+    .list{margin-left: 20%; height: auto}
+    .list li{margin-top: 5px}
+    .list .ico{margin-top: 5%;}
+    .child{margin-top: 3%;}
+    .charts{display: flex; justify-content: center; margin: -50px auto; text-align: center;}
+    .section3 h3{margin-bottom: 5px;}
+    .section3 h3{ font-size: 4vw;}
+    .charts{display: flex; flex-direction: column}
+    .chart{margin-left: 10%;}
+    .ico-cont{font-size: 5vw;}
+    .descr-cont{font-size: 6vw;}
+    .descr-cont a{font-size: 6vw;}
+    .contacts{margin: 10px 5%}
+    .ico-cont{margin-right: -6%;}
 }
 
 @media screen and (max-width: 425px){
     .button{width: 28vw;}
+    .ico, .descr{text-align: left; font-size: 4vw; margin-left: 15px;}
+    .descr-ch{margin-left: 10px;}
+    .descr-ch2{margin-left: 12px}
+    .descr-ch3{margin-left: 10px}
     .special{height: 100%;}
+    .special h3{letter-spacing: 1px;}
     .special img{width: 100%; height: 50%;}
     .slider ul h2{font-size: 8vw;}
-    .slider ul li p{font-size: 4vw; width: 45vw;}
+    .slider ul li p{font-size: 4vw; width: 65vw;}
     .footer img{width: 30vw;}
-    .footer p{font-size: 2.5vw;}
+    .footer p{font-size: 2.5vw; }
     .info{margin-top: 5vh;}
 }
 
@@ -393,6 +354,8 @@ ul{list-style: none;}
     .button{width: 32vw;}
     h2{font-size: 10vw;}
     .info{width: 90vw;}
-    .info p{font-size: 4vw; width: 80vw; margin: 10px auto}
+    .info p{font-size: 4vw; width: 80vw; margin: 10px auto; margin-bottom: 60%;}
     .contacts li:nth-child(5){}
+    .list{margin-left: auto}
+    .special img{width: 60%;}
 }

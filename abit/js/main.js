@@ -38,73 +38,11 @@ new Chart(document.getElementById("pie-chart2"), {
 });
 
 
-// // google.charts.load("current", {packages:["corechart"]});
-// // google.charts.setOnLoadCallback(drawChart1);
-// // google.charts.setOnLoadCallback(drawChart2);
-// function drawChart1() {
-//     var data = google.visualization.arrayToDataTable([
-//         ['Предмет', 'Коефіцієнт'],
-//         ['Математика',  0.5],
-//         ['Українська мова та література',  0.2],
-//         ['Фізика або Іноземна мова', 0.2],
-//         ['Додаткові бали', 0.05],
-//         ['ФДП', 0.05]
-//     ]);
-//
-//     var options = {
-//         'width': 700,
-//         'height': 600,
-//         pieHole: 0.1,
-//         legend: 'none',
-//         pieSliceText: 'none',
-//         slices: {
-//             0: { color: '#5e5e9a' },
-//             1: { color: '#fd4' },
-//             2: {color: '#7dd'},
-//             3: {color: '#f87'},
-//             4: {color: '#979df1'},
-//             5: {color: '#3aa'}
-//         }
-//     };
-//
-//     // var chart = new google.visualization.PieChart(document.getElementById('piechart1'));
-//     // chart.draw(data, options);
-// }
-//
-//
-// function drawChart2() {
-//     var data = google.visualization.arrayToDataTable([
-//         ['Предмет', 'Коефіцієнт'],
-//         ['Математика',  0.5],
-//         ['Українська мова та література',  0.2],
-//         ['Фізика або Іноземна мова', 0.25],
-//         ['Додаткові бали', 0.05]
-//     ]);
-//
-//     var options = {
-//         'width': 700,
-//         'height': 600,
-//         pieHole: 0.1,
-//         legend: 'none',
-//         pieSliceText: 'none',
-//         slices: {
-//             0: { color: '#6a6fae' },
-//             1: { color: '#fd4' },
-//             2: {color: '#7dd'},
-//             3: {color: '#f87'},
-//             4: {color: '#77b'}
-//         }
-//     };
-//
-//     // var chart = new google.visualization.PieChart(document.getElementById('piechart2'));
-//     // chart.draw(data, options);
-// }
-
 $(document).ready(function() {
     $(".slider").each(function() {
 
         var repeats = 5,
-            interval = 11,
+            interval = 9,
             repeat = true,
             slider = $(this),
             repeatCount = 0,
