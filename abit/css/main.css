@@ -45,7 +45,7 @@ p,a{font-size: 1.5vw;  text-align: center}
 a{text-decoration: none;}
 ul{list-style: none;}
 
-.container{display: flex; justify-content: center; margin: 0;}
+.container{display: flex; justify-content: center; margin: 30px 5%;}
 
 .col-d-1{width: 10vw;}
 .col-d-2{width: 20vw;}
@@ -215,8 +215,7 @@ ul.peppermint-dots > li.peppermint-active-dot > span {
 
 .header{
     background: var(--yelow);
-    height: 100vh;
-    padding: 20px;
+    padding: 60px;
     text-align: center;
 }
 
@@ -235,11 +234,11 @@ fa-facebook{width: 25px}
 .top img{width: 30px; height: 30px}
 
 .info{
-    margin-top: 15vh;
+    margin-top: 25vh;
     width: 90vw;
 }
 
-.info p{margin:5% auto 30% auto; font-size: 1vw;}
+.info p{margin:5% auto 20% auto; font-size: 1vw;}
 
 .button{
     display: block;
@@ -251,40 +250,38 @@ fa-facebook{width: 25px}
     border-radius: 15px;
 }
 
-#ex1{
-    display: block;
-    margin: 3% auto;
-    text-align: center;
-}
+#ex1{display: block; margin-top: 80px;}
 
-#ex1 h2{color: var(--yelow);}
+#ex1 h2{color: var(--yelow); margin-bottom: 20px;}
 
-.list2,.list1{display: flex; flex-direction: column; margin: 20px 4%;}
+.list2,.list1{display: flex; flex-direction: column; margin: 30px 4%;}
 
-.list{display: flex; justify-content: flex-start; flex-direction:row; height: 120px;}
+.list{display: flex; flex-direction:row; height: 120px;}
 .descr{color: var(--white); text-align: left;}
 .ico{color: var(--yelow);margin-right: 3%; margin-top: 3%; text-align: left}
 
-.section2{
+.section{
     text-align: center;
-    margin: 20px auto;
+    margin: 60px auto -30px auto;
+    padding-top: 20px;
 }
 
-.section2 h2{color: var(--yelow); position: relative}
+.section2 h2{color: var(--yelow); margin-top: -40px}
 
-.special{display:block; margin: 20px 4%; background: var(--yelow); padding: 15px; border-radius: 15px; height: 480px}
+.special{display:block;
+    margin: 40px 4%;
+    background: var(--yelow);
+    padding: 15px;
+    border-radius: 15px;
+    height: 100%;}
 .special img{width: 80%;}
-#kn{height: 80px; transform: translateY(30%);}
+#kn{height: 78px; display: table-cell; vertical-align: middle; text-align: center; padding-left: 1%;}
 
-.section3{
-    text-align: center;
-    margin: 40px auto;
-}
-
+.section3{}
 .section3 h2, .section3 h3{color: var(--yelow); margin: 20px auto;}
-.chart{margin: 20px 4%; color: var(--yelow)}
+.chart{margin: 10px 4% 40px; color: var(--yelow)}
 
-.section5{background: var(--yelow); margin: 60px auto;}
+.section5{background: var(--yelow);}
 figure p{width: 80vw;}
 
 .photo {
@@ -293,10 +290,11 @@ figure p{width: 80vw;}
     -webkit-border-radius: 50%;
     border-radius: 50%;
     margin-bottom: 2em;
+    text-align: center;
 }
 
-.section6{padding: 20px; margin: 40px auto;}
-.section6 h2{text-align: center; color: var(--yelow); margin-bottom: 15px;}
+.section6{margin-bottom: 60px; margin-top: 120px;}
+.section6 h2{text-align: center; color: var(--yelow); margin-bottom: 40px;}
 
 .contacts{margin-top: 5%}
 .contact{display: flex;}
