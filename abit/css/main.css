@@ -253,7 +253,7 @@ fa-facebook{width: 25px}
 
 #ex1{
     display: block;
-    margin: 3vh auto;
+    margin: 3% auto;
     text-align: center;
 }
 
@@ -292,6 +292,7 @@ figure p{width: 80vw;}
     height: 150px;
     -webkit-border-radius: 50%;
     border-radius: 50%;
+    margin-bottom: 2em;
 }
 
 .section6{padding: 20px; margin: 40px auto;}
@@ -372,6 +373,10 @@ figure p{width: 80vw;}
     .descr-cont a{font-size: 6vw;}
     .contacts{margin: 10px 5%}
     .ico-cont{margin-right: -6%;}
+    .peppermint-slides {
+        padding-top: 5em;
+        padding-bottom: 5em;
+    }
 }
 
 @media screen and (max-width: 425px){
@@ -381,13 +386,12 @@ figure p{width: 80vw;}
     .descr-ch2{margin-left: 12px}
     .descr-ch3{margin-left: 10px}
     .special{height: 100%;}
-    .special h3{letter-spacing: 1px;}
+    .special h3{letter-spacing: 1px; font-size: 3.5vw;}
     .special img{width: 100%; height: 50%;}
-    .slider ul h2{font-size: 8vw;}
-    .slider ul li p{font-size: 4vw; width: 65vw;}
+    #kn{height: 100%;}
     .footer img{width: 30vw;}
     .footer p{font-size: 2.5vw; }
-    .info{margin-top: 5vh;}
+    .info{margin-top: 25vh;}
 }
 
 @media screen and (max-width: 375px){
