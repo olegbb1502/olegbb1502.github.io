@@ -315,7 +315,7 @@ $(function () {
             }
         });
 
-        $('.tab').on('click', function () {
+        $('.underline').on('click', function () {
             menu.slideToggle();
         })
         // subMenu.hover(function(){
