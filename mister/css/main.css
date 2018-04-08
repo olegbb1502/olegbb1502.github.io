@@ -227,7 +227,7 @@ canvas{
 .lightbox img{
     max-width: 90%;
     max-height: 80%;
-    margin-top: 50%;
+    margin-top: 2%;
 }
 .lightbox p{
     font-size: 24px;
@@ -302,4 +302,7 @@ canvas{
 }
 
 @media screen and (max-width: 500px){
+    .lightbox img{
+        margin-top: 50%;
+    }
 }
