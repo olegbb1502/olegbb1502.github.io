@@ -104,7 +104,7 @@ nav a#drop {
     margin: 15px 15px 16px 0 ;
 }
 
-.underline, .underlineB {
+.underline{
     display: inline;
     position: relative;
     overflow: hidden;
@@ -112,12 +112,13 @@ nav a#drop {
 
 #butt{
     display: block;
-    margin-top: 25px;
-    padding: 15px;
-    height: auto;
+    margin: 25px auto 0;
+    padding: 5px 2px;
+    width: 40%;
+    border: 2px solid #fff;
 }
 
-.underline:after, .underlineB:after {
+.underline:after{
     content: "";
     position: absolute;
     z-index: -1;
@@ -132,8 +133,7 @@ nav a#drop {
 }
 .underline:hover:after,
 .underline:focus:after,
-.underline:active:after, .underlineB:hover:after
-, .underlineB:focus:after, .underlineB:active:after{
+.underline:active:after{
     left: 0;
     right: auto;
     width: 100%;
@@ -288,12 +288,6 @@ h1{
     height: 600px;
 }
 
-@media screen and (max-width: 920px) {
-    .hidden-menu{display: block;}
-    .menu{display: none;}
-    .btn-menu{display: block}
-    .btn-menu span{display: block}
-}
 @media screen and (max-width: 800px) {
     body {
         padding: 0;
@@ -351,7 +345,6 @@ h1{
         height: 60%;
         margin: 15% auto;
     }
-    #butt{border: 2px solid #fff; padding:5px 10px; margin: 20px auto; width: 50%}
 }
 
 
@@ -361,10 +354,6 @@ h1{
     }
     .underline:after{
         top: 35px;
-    }
-
-    .underlineB:after{
-        display: none;
     }
 
   .mister{
