@@ -311,45 +311,26 @@ $(function () {
         link.on("click" , function(){
             var winWidth = $(window).width();
             if(winWidth < 800 && !$(this).hasClass("submenu")){
-                menu.slideDown();
+                menu.slideTop();
             }
         });
 
-        $('.underline').on('click', function () {
-            menu.slideToggle();
-        })
+        $(window).resize(function(){
+            var windowWidth = $(window).width();
+            if(windowWidth <=800){
+                $('.underline').on('click', function () {
+                    menu.slideToggle();
+                })
+            }
+        });
+
+
         // subMenu.hover(function(){
         //     $(this).children("ul").stop().slideDown();
         // },function(){
         //     $(this).children("ul").stop().slideUp();
         // });
     })(jQuery);
-
-    $(".img-w").each(function() {
-        $(this).wrap("<div class='img-c'></div>")
-        let imgSrc = $(this).find("img").attr("src");
-        $(this).css('background-image', 'url(' + imgSrc + ')');
-    })
-
-
-    $(".img-c").click(function() {
-        let w = $(this).outerWidth()
-        let h = $(this).outerHeight()
-        let x = $(this).offset().left
-        let y = $(this).offset().top
-
-
-        $(".active").not($(this)).remove()
-        let copy = $(this).clone();
-        copy.insertAfter($(this)).height(h).width(w).delay(500).addClass("active")
-        $(".active").css('top', y - 8);
-        $(".active").css('left', x - 8);
-
-        setTimeout(function() {
-            copy.addClass("positioned")
-        }, 0)
-
-    })
 
     var quadimages = document.querySelectorAll("#quad figure");
     for(i=0; i<quadimages.length; i++) {
