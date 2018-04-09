@@ -110,10 +110,11 @@ nav a#drop {
     overflow: hidden;
 }
 
-.underlineB span{
-    display: inline-block;
+#butt{
+    display: block;
     margin-top: 25px;
     padding: 15px;
+    height: auto;
 }
 
 .underline:after, .underlineB:after {
@@ -350,6 +351,7 @@ h1{
         height: 60%;
         margin: 15% auto;
     }
+    #butt{border: 2px solid #fff; padding:5px 10px; margin: 20px auto; width: 50%}
 }
 
 
@@ -360,8 +362,6 @@ h1{
     .underline:after{
         top: 35px;
     }
-
-    .underlineB span{border: 2px solid #fff; padding:5px 10px; margin: 20px auto;}
 
     .underlineB:after{
         display: none;
