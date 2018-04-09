@@ -32,8 +32,7 @@ body{
 
 #head{
     display: block;
-    width: 100vw;
-    height: 110vh;
+    height: 100vh;
     background: #000;
     position: relative;
 }
@@ -168,8 +167,9 @@ canvas{
     /*position: absolute;*/
     /*z-index: 1;*/
     background-color: #000;
-    width: 100vw;
+    width: 97vw;
     height: 100vh;
+    margin: 0 auto;
     top: 0;
 }
 
