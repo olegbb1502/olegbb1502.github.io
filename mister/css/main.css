@@ -309,11 +309,17 @@ h1{
     .lightbox img{
         margin-top: 50%;
     }
-    .underline:after, .underlineB:after {
+    .underline:after{
         top: 35px;
     }
 
-    .mister{
+    .underlineB span{border: 2px solid #fff; padding:5px 10px; margin: 0px auto;}
+
+    .underlineB:after{
+        display: none;
+    }
+
+  .mister{
         font-size: 20vw;
     }
 }
