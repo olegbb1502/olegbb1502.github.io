@@ -1,0 +1,80 @@
+.header img{
+    width: 100%;
+}
+
+.content1{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-column-gap: 25px;
+    width: 90%;
+    margin: 20px auto;
+}
+
+.list1 ul li{
+    margin: 15px 0;
+}
+
+.list1 ul li span{
+    color: #0dc2ce;
+    text-decoration: underline;
+    margin: 15px 0;
+}
+
+.procedure{
+    display: flex;
+    margin: 15px 0;
+}
+
+.procedure .title{
+    margin-left: 25px;
+}
+
+.procedure .title h3{color: #0dc2ce; margin-bottom: 5px}
+
+.list3 ul li{
+    display: flex;
+    justify-content: center;
+}
+
+.list3 ul li .title{
+    margin-left: 5px;
+}
+
+.list3 ul li .span{
+    font-size: 40px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-top: 25px;
+    padding: 15px;
+    text-align: right;
+    background: #0dc2ce;
+    border-radius: 50%;
+    color: #ffffff;
+}
+
+.content2{
+    padding: 25px;
+    margin: 20px auto 40px;
+    background: #c2c2c2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 25px;
+}
+
+.block h2{
+    margin: 15px 0;
+}
+
+.block p{
+    margin: 15px 0;
+}
+
+
+@media screen and (max-width: 600px){
+    .content1, .content2{
+        display: grid;
+        grid-template-columns: 1fr;
+        font-size: 12px;
+    }
+}

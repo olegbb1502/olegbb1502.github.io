@@ -1,0 +1,19 @@
+.main-wrap{
+    background-image: url("../img/serv-header.PNG");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.content{
+    margin: 20px auto;
+    padding: 30px;
+}
+
+.staff{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 15px 0;
+}
+
+.staff img{margin-right: 15px}

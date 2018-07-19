@@ -1,0 +1,51 @@
+.content{
+    background-image: url("../img/serv-header.PNG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 25px 30px;
+}
+
+.info{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.inp{
+    display: flex;
+    justify-content: flex-end;
+    text-align: left;
+}
+
+.inp input, .inp textarea{
+    margin: 5px 10px;
+    padding: 2px 3px;
+    width: 420px;
+}
+
+.inp textarea{
+    resize: none;
+}
+
+iframe{
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.map p a{
+    margin-left: 15px;
+}
+
+.information{
+    padding: 30px 80px;
+    background: #c2c2c2;
+}
+
+@media screen and (max-width: 480px) {
+    .inp h2{font-size: 12px}
+    .inp input, .inp textarea{
+        margin: 5px 10px;
+        padding: 2px 3px;
+        width: 60vw;
+    }
+}

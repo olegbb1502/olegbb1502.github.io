@@ -1,0 +1,61 @@
+    .header{
+        padding: 20px;
+        background-image: url("../img/serv-header.PNG");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .serv-title{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .title1 h2{grid-area: header; margin: 15px 0; color: #0dc2ce}
+    .title1 img{grid-area: img}
+    .info{grid-area: title1}
+    .title1 p{grid-area: title2; width: 80%}
+
+    .title1{
+        display: grid;
+        grid-template-areas: 'header heaer'
+        'img title1'
+        'title2 title2';
+    }
+
+    .serv-list h2{color: #0dc2ce}
+
+    .serv-list ul{list-style: disc;}
+    .serv-list ul li{color: #0dc2ce; margin: 25px}
+    .serv-list ul li span{color: #000}
+
+    .content2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 80%;
+        margin: 25px auto;
+    }
+
+    .col1 span{color: #0dc2ce; font-weight:bold;}
+    .col1 p{
+        margin: 15px 0;
+    }
+
+    .example{
+        display: flex;
+    }
+
+    .col2-title{margin-left: 15px}
+
+    @media screen and (max-width: 750px){
+        .serv-title{
+            grid-template-columns: 2fr;
+        }
+        .content2{grid-template-columns: 1fr; font-size: 10px}
+        .title1{
+            display: grid;
+            grid-template-areas: 'header heaer'
+            'title1 title1'
+            'title2 title2';
+        }
+        .title1 img{display: none}
+    }
