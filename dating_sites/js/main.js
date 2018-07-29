@@ -22,7 +22,7 @@ $(document).ready(function () {
         var name = $('#name').val();
         var mail = $('#mail').val();
         var password = $('#password').val();
-        if(name == '' && mail == '' && password == ''){
+        if(name == '' && mail == '' && password == '' || password == '' || mail == '' || name == ''){
             $(this).css('background', '#d0182b');
             $('.successful').css('color', '#d0182b').html('Uncorrect data!');
             console.log('uncorrect');
