@@ -1,0 +1,96 @@
+@import "animation";
+body {
+	margin: 0;
+}
+#frame {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+svg {
+	width: 100%;
+	max-width: 800px;
+	vertical-align: top;
+}
+
+.cls-86 {
+	font-size: 166.9px;
+	font-family: Molot, Molot;
+}
+
+#talk{
+	//animation: talk 20s infinite 20s;
+}
+
+#bb8-shadow{
+	transform-origin: center;
+}
+
+.cls-34\.1{
+	mask: url(#mask-4);
+}
+
+.cls-43{
+	animation: blinker 1s linear infinite;
+}
+
+.cls-45{
+	animation: blinker2 3s linear infinite;
+}
+
+#bb8-body{
+	transform-origin: bottom center;
+}
+
+#bb8.jump{
+	#bb8-body{
+		transform-origin: 50% 50%;
+		animation: jump .5s;
+	}
+	#bb8-shadow{
+		animation: shadowJump .5s;
+	}
+	#bb8-head{
+	}
+
+	#bb8-body-2{
+		animation: bodyJump .02s infinite;
+	}
+	#talk{
+		opacity: 0;
+	}
+}
+
+#bb8.move{
+	#talk{
+		opacity: 0;
+	}
+}
+
+#bb8.intro{
+	//-webkit-transform: translate(100%, 20%) scale(.6);
+	//-moz-transform: translate(100%, 20%) scale(.6);
+	//-ms-transform: translate(100%, 20%) scale(.6);
+	//-o-transform: translate(100%, 20%) scale(.6);
+	//transform: translate(100%, 20%) scale(.6);
+	//transition: all 3s;
+	#talk{
+		opacity: 0;
+	}
+	#bb8-body-circle{
+		//overflow: hidden;
+	}
+	#bb8-body-2{
+		//animation: move .2s infinite;
+		//transform-origin: center center;
+
+	}
+	//#bb8-head{
+	//	transform: none;
+	//}
+}
+
+#cloud{
+	animation: cloud 35s infinite -2s;
+}

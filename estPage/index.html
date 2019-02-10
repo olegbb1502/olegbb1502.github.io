@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/js.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="top">
+            <h1 id="logo" >SITE LOGO</h1>
+            <div class="local">
+                <i class="fas fa-map-marker-alt fa-2x" style="color:red;"></i>
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">&#9660;</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#">City 1</a>
+                        <a href="#">City 2</a>
+                        <a href="#">City 3</a>
+                    </div>
+                </div>
+            </div>
+            <div class="search">
+                <input type="search" id="search">
+            </div>
+            <div class="log">
+                <div id="bell">
+                    <span class="fa-layers fa-fw fa-2x">
+                        <i class="fas fa-bell"></i>
+                        <span class="fa-layers-counter" style="background:red">1</span>
+                    </span>
+                </div>
+                <div id="photo">
+                    <img src="images/photo.jpg" alt="photo">
+                </div>
+            </div>
+        </div>
+        <div class="main"></div>
+    </div>
+    <div class="content row justify-content-center">
+        <div class="col-xl-6 col-md-7">
+            <div id="head1">
+                <h2 id="ch">Английский для детей</h2>
+                <p id="cp">Лучше раньше, чем никогда</p>
+            </div>
+            <div class="info">
+                <a href="#" onclick="showmenu('hidden-menu1','arrow1'); return false">В каком возрасте начать обучение?<pre id="arrow1">&#9660;</pre></a>
+                <p id="hidden-menu1">До пяти лет дети обладают лингвистической гениальностью. Они способны запоминать 20-30 новых слов в день. Простая арифметика дает впечатляющий результат – 7-10 тысяч слов в год. Да мы и в родном русском столько не используем, а что говорить об иностранном. Способности к языкам, безусловно, либо есть, либо нет. </p>
+            </div>
+            <div class="info">
+                <a href="#" onclick="showmenu('hidden-menu2','arrow2'); return false">В каком возрасте начать обучение?<pre id="arrow2">&#9660;</pre></a>
+                <p id="hidden-menu2">До пяти лет дети обладают лингвистической гениальностью. Они способны запоминать 20-30 новых слов в день. Простая арифметика дает впечатляющий результат – 7-10 тысяч слов в год. Да мы и в родном русском столько не используем, а что говорить об иностранном. Способности к языкам, безусловно, либо есть, либо нет. </p>
+            </div>
+
+        </div>
+        <div class="col-xl-2 col-md-3 tope">
+            <div id="head2">
+                <h2 id="ch">Курсы</h2>
+                <p id="cp">Английский язык</p>
+            </div>
+            <div class="course">
+                <div class="course-top">
+                    <img src="images/logo.jpg" alt="logo1" id="logo1">
+                    <i class="far fa-star fa-lg"></i>
+                </div>
+                <img src="./images/disc.JPG" alt="" id="disc">
+                <div class="infp">
+                    <p id="inf"><i class="fas fa-check-square fa-2x" style="color: #536d7f;"></i><label>Школа «Let's Speak»</label></p>
+                    <p>Репетиторы носители языка главное наше преимущес...</p>
+                </div>
+                <hr>
+                <div class="cours-info">
+                    <i class="fas fa-map-marker-alt fa-2x"></i>
+                    <p>Украина Киев</p>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+    <h2 id="slide-h">Курсы английского в Киеве</h2>
+    <div class="slider ">
+        <div class="slide-list">
+            <div class="slide-wrap">
+                <div class="slide-item">
+                    <div class="course">
+                        <div class="course-top">
+                            <img src="images/logo.jpg" alt="logo1" id="logo1">
+                            <i class="far fa-star fa-lg"></i>
+                        </div>
+                        <img src="./images/disc.JPG" alt="" id="disc">
+                        <div class="infp">
+                            <p id="inf"><i class="fas fa-check-square fa-2x" style="color: #536d7f;"></i><label>Школа «Let's Speak»</label></p>
+                            <p>Репетиторы носители языка главное наше преимущес...</p>
+                        </div>
+                        <hr>
+                        <div class="cours-info">
+                            <i class="fas fa-map-marker-alt fa-2x"></i>
+                            <p>Украина Киев</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-item">
+                    <div class="course">
+                        <div class="course-top">
+                            <img src="images/logo.jpg" alt="logo1" id="logo1">
+                            <i class="far fa-star fa-lg"></i>
+                        </div>
+                        <img src="./images/disc.JPG" alt="" id="disc">
+                        <div class="infp">
+                            <p id="inf"><i class="fas fa-check-square fa-2x" style="color: #536d7f;"></i><label>Школа «Let's Speak»</label></p>
+                            <p>Репетиторы носители языка главное наше преимущес...</p>
+                        </div>
+                        <hr>
+                        <div class="cours-info">
+                            <i class="fas fa-map-marker-alt fa-2x"></i>
+                            <p>Украина Киев</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-item">
+                    <div class="course">
+                        <div class="course-top">
+                            <img src="images/logo.jpg" alt="logo1" id="logo1">
+                            <i class="far fa-star fa-lg"></i>
+                        </div>
+                        <img src="./images/disc.JPG" alt="" id="disc">
+                        <div class="infp">
+                            <p id="inf"><i class="fas fa-check-square fa-2x" style="color: #536d7f;"></i><label>Школа «Let's Speak»</label></p>
+                            <p>Репетиторы носители языка главное наше преимущес...</p>
+                        </div>
+                        <hr>
+                        <div class="cours-info">
+                            <i class="fas fa-map-marker-alt fa-2x"></i>
+                            <p>Украина Киев</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-item">
+                    <div class="course">
+                        <div class="course-top">
+                            <img src="images/logo.jpg" alt="logo1" id="logo1">
+                            <i class="far fa-star fa-lg"></i>
+                        </div>
+                        <img src="./images/disc.JPG" alt="" id="disc">
+                        <div class="infp">
+                            <p id="inf"><i class="fas fa-check-square fa-2x" style="color: #536d7f;"></i><label>Школа «Let's Speak»</label></p>
+                            <p>Репетиторы носители языка главное наше преимущес...</p>
+                        </div>
+                        <hr>
+                        <div class="cours-info">
+                            <i class="fas fa-map-marker-alt fa-2x"></i>
+                            <p>Украина Киев</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--<div class="clear"></div>-->
+        </div>
+        <div name="prev" class="navy prev-slide fa-2x"><i class="fas fa-angle-left" style="background: #fff;"></i></div>
+        <div name="next" class="navy next-slide fa-2x"><i class="fas fa-angle-right" style="background: #fff;"></i></div>
+    </div>
+</body>
+</html>

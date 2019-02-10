@@ -22,6 +22,7 @@ $(document).ready(function(){
     });
 });
 
+
 new Chart(document.getElementById("pie-chart1"), {
     type: 'pie',
     data: {
@@ -32,7 +33,12 @@ new Chart(document.getElementById("pie-chart1"), {
         }]
     },
     options: {
-        legend:{display:false}
+        legend:{
+            display:false,
+            labels: {
+                fontSize: 50
+            }
+        }
     }
 });
 

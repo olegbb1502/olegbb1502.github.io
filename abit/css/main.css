@@ -281,6 +281,8 @@ fa-facebook{width: 25px}
 .section3 h2, .section3 h3{color: var(--yelow); margin: 20px auto;}
 .chart{margin: 10px 4% 40px; color: var(--yelow)}
 
+#pie-chart1, #pie-chart2{font-size: 20px;}
+
 .section5{background: var(--yelow);}
 figure p{width: 80vw;}
 
@@ -352,22 +354,25 @@ figure p{width: 80vw;}
     .col-m-9{width: 90vw;}
     .col-m-10{width: 100vw;}
     a,p{font-size: 3vw;}
+    h1{font-size: 8vw;}
     h2{font-size: 7vw;}
+    h3{font-size: 4vw;}
     .top a{font-size: 4vw;}
-    .info{width: 90vw;}
-    .info p{margin-bottom: 80%;}
+    .info{width: 100%;}
+    .info p{margin-bottom: 60%; font-size: 4vw;}
     .list2{margin-top: -15px;}
     .list{margin-left: 20%; height: auto}
     .list li{margin-top: 5px}
     .list .ico{margin-top: 5%;}
     .child{margin-top: 3%;}
+    #kn{display: block; height: auto;}
     .charts{display: flex; justify-content: center; margin: -50px auto; text-align: center;}
     .section3 h3{margin-bottom: 5px;}
     .section3 h3{ font-size: 4vw;}
     .charts{display: flex; flex-direction: column}
     .chart{margin-left: 10%;}
     .ico-cont{font-size: 5vw;}
-    .descr-cont{font-size: 6vw;}
+    .descr-cont{font-size: 6vw; margin-left: 50px;}
     .descr-cont a{font-size: 6vw;}
     .contacts{margin: 10px 5%}
     .ico-cont{margin-right: -6%;}
@@ -378,18 +383,26 @@ figure p{width: 80vw;}
 }
 
 @media screen and (max-width: 425px){
-    .button{width: 28vw;}
+    .top a{font-size: 6vw;}
+    .container{margin: 30px auto;}
+    .button{width: 28vw; font-size: 4vw;}
     .ico, .descr{text-align: left; font-size: 4vw; margin-left: 15px;}
     .descr-ch{margin-left: 10px;}
     .descr-ch2{margin-left: 12px}
     .descr-ch3{margin-left: 10px}
     .special{height: 100%;}
-    .special h3{letter-spacing: 1px; font-size: 3.5vw;}
+    .special h3{letter-spacing: 1px; font-size: 6.5vw;}
     .special img{width: 100%; height: 50%;}
     #kn{height: 100%;}
     .footer img{width: 30vw;}
     .footer p{font-size: 2.5vw; }
     .info{margin-top: 25vh;}
+    .header{padding: 60px 10px;}
+    h1{font-size: 6vw;}
+    h2{font-size: 3vw;}
+    h3{font-size: 4vw;}
+    .info p{font-size: 3vw;}
+    figure p{font-size: 4vw;}
 }
 
 @media screen and (max-width: 375px){
@@ -409,5 +422,5 @@ figure p{width: 80vw;}
     .info p{font-size: 4vw; width: 80vw; margin: 10px auto; margin-bottom: 60%;}
     .contacts li:nth-child(5){}
     .list{margin-left: auto}
-    .special img{width: 60%;}
+    .special img{width: 86%;}
 }
