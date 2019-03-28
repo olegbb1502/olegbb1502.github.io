@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/olegbb1502/pitbull_frame/precache-manifest.84ab0c232be0d218b4ef6f440348dfac.js"
+  "/olegbb1502/pitbull_frame/precache-manifest.2fd033ef239330bc095004ba6a1333e7.js"
 );
 
 workbox.clientsClaim();
