@@ -14,11 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-<<<<<<< HEAD
-  "/olegbb1502/pitbull_frame/precache-manifest.84171b083bc76894613b7b0d914ca5ce.js"
-=======
-  "/olegbb1502/pitbull_frame/precache-manifest.2fd033ef239330bc095004ba6a1333e7.js"
->>>>>>> c9495bf39a9015b47c2a3746890ca283c37db089
+  "/precache-manifest.4fcf9de79d965e044b24ae285b706f56.js"
 );
 
 workbox.clientsClaim();
@@ -32,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/olegbb1502/pitbull_frame/index.html", {
+workbox.routing.registerNavigationRoute("/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
