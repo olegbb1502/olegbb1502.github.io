@@ -1,0 +1,160 @@
+
+:root{
+    /* Portfolio palette: light grey, black, orange */
+    --bg:#f5f6f7;         /* light grey background */
+    --fg:#0f0f10;         /* near-black text */
+    --muted:#6b7280;      /* grey for secondary text */
+    --accent:#ff7a00;     /* orange accent */
+    --accent-soft:#ffe8d1;/* soft orange */
+    --card:#ffffff;       /* cards are white on light grey */
+    --line:#e5e7eb;       /* subtle borders */
+  }
+  *{ box-sizing:border-box }
+  html,body{ margin:0; padding:0; background:var(--bg); color:var(--fg); font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+  a{ color:var(--accent); text-decoration:none }
+  a:hover{ text-decoration:underline }
+  .container{ max-width:1100px; margin:0 auto; padding:0 20px }
+  header{ position:sticky; top:0; backdrop-filter:saturate(140%) blur(8px); background:rgba(245,246,247,.85); border-bottom:1px solid var(--line); z-index:10 }
+  .nav{ display:flex; align-items:center; justify-content:space-between; height:70px }
+  .burger{ display:none; }
+  .brand{ display:flex; align-items:center; gap:10px }
+  .brand img{ height:34px; width:34px }
+  .brand .name{ font-family:"Baloo 2", system-ui; font-weight:700; font-size:20px; letter-spacing:.2px; color:#111 }
+  .links{ display:flex; gap:18px; align-items:center }
+  .btn{ display:inline-flex; align-items:center; gap:8px; border:1px solid #0f0f10; background:#0f0f10; color:#ffffff; padding:10px 14px; border-radius:12px; font-weight:700 }
+  .btn:hover{ background:#111213; border-color:#111213 }
+  .ghost{ background:transparent; color:var(--fg); border-color:var(--line) }
+  .ghost:hover{ border-color:#c7cbd1; color:var(--accent); }
+  .hero{ padding:70px 0 36px; display:grid; grid-template-columns:1.2fr .8fr; gap:28px; align-items:center }
+  .hero h1{ font-family:"Baloo 2", system-ui; font-size:48px; line-height:1.06; margin:0 0 12px; letter-spacing:.2px }
+  .hero h1 .light{ color:var(--accent) }
+  .hero p.lead{ font-size:18px; color:var(--muted); margin:0 0 18px }
+  .tag{ display:inline-block; padding:6px 10px; border:1px solid var(--line); border-radius:999px; font-size:12px; color:#333; background:#fff }
+  .card{ background:var(--card); border:1px solid var(--line); border-radius:16px; padding:18px }
+  .grid-3{ display:grid; grid-template-columns:repeat(3,1fr); gap:16px }
+  .grid-2{ display:grid; grid-template-columns:repeat(2,1fr); gap:16px }
+  .skills{ display:grid; grid-template-columns:repeat(4,1fr); gap:12px }
+  .skill{ background:#ffffff; border:1px solid var(--line); padding:10px 12px; border-radius:12px; font-weight:700 }
+  section{ padding:36px 0 }
+  h2{ font-size:26px; margin:0 0 16px }
+  .list{ display:flex; flex-direction:column; gap:8px; padding-left:18px }
+  .footer{ padding:30px 0; border-top:1px solid var(--line); color:var(--muted); font-size:14px }
+  img.heroimg{ width:100%; }
+  /* Orange accents for small chips if needed later */
+  .chip-orange{ display:inline-block; background:var(--accent-soft); color:#7a2d00; padding:6px 10px; border-radius:999px; font-weight:700 }
+  @media (max-width: 900px){ .hero{ grid-template-columns:1fr; } .grid-3{ grid-template-columns:1fr; } .grid-2{ grid-template-columns:1fr; } .skills{ grid-template-columns:repeat(2,1fr); } }
+  .photo-wrap{ position:relative; max-width:420px; margin:0 auto; }
+  .photo{ width:100%; height:auto; display:block; filter: drop-shadow(0 18px 40px rgba(0,0,0,.18)); }
+  /* CSS mask to create a soft squircle (better than plain rectangle) */
+  @supports((-webkit-mask: radial-gradient(#000, transparent)) or (mask: radial-gradient(#000, transparent))){
+    .photo{ 
+      --r: 28px;
+      -webkit-mask:
+        radial-gradient(var(--r) at var(--r) var(--r), #000 98%, transparent 101%) top left,
+        radial-gradient(var(--r) at calc(100% - var(--r)) var(--r), #000 98%, transparent 101%) top right,
+        radial-gradient(var(--r) at var(--r) calc(100% - var(--r)), #000 98%, transparent 101%) bottom left,
+        radial-gradient(var(--r) at calc(100% - var(--r)) calc(100% - var(--r)), #000 98%, transparent 101%) bottom right,
+        linear-gradient(#000 0 0);
+      -webkit-mask-size:51% 51%,51% 51%,51% 51%,51% 51%,100% 100%;
+      -webkit-mask-repeat:no-repeat;
+              mask:
+        radial-gradient(var(--r) at var(--r) var(--r), #000 98%, transparent 101%) top left,
+        radial-gradient(var(--r) at calc(100% - var(--r)) var(--r), #000 98%, transparent 101%) top right,
+        radial-gradient(var(--r) at var(--r) calc(100% - var(--r)), #000 98%, transparent 101%) bottom left,
+        radial-gradient(var(--r) at calc(100% - var(--r)) calc(100% - var(--r)), #000 98%, transparent 101%) bottom right,
+        linear-gradient(#000 0 0);
+      mask-size:51% 51%,51% 51%,51% 51%,51% 51%,100% 100%;
+      mask-repeat:no-repeat;
+    }
+    .photo-wrap::after{ content:""; position:absolute; inset:-12px; background: conic-gradient(from 220deg, rgba(255,122,0,.4), rgba(255,122,0,0) 60%); filter: blur(18px); z-index:-1; border-radius:32px; }
+  }
+  /* Form styles *//* --- Mobile improvements --- */
+  /* Make nav links horizontally scrollable on very small screens */
+  /* Form styles */
+  .field{ display:flex; flex-direction:column; gap:6px; margin-bottom:12px }
+  .field label{ font-weight:700 }
+  input[type="text"], input[type="email"], textarea{ width:100%; padding:12px 14px; border-radius:12px; border:1px solid var(--line); background:#ffffff; color:var(--fg); }
+  input:focus, textarea:focus{ outline:2px solid var(--accent-soft); border-color:var(--accent-soft) }
+
+  /* Mobile devices (up to 900px) */
+  @media (max-width: 900px) {
+    .hero{ grid-template-columns:1fr; }
+    .grid-3{ grid-template-columns:1fr; }
+    .grid-2{ grid-template-columns:1fr; }
+    
+    /* Tiny screens: scrollable nav */
+    @media (max-width: 560px) {
+      .links{ 
+        overflow-x:auto; 
+        white-space:nowrap; 
+        -webkit-overflow-scrolling:touch; 
+        gap:14px 
+      }
+      .links::-webkit-scrollbar{ display:none }
+      .links a{ padding:6px 2px }
+    }
+    
+    /* iPhone XR and similar mobile devices */
+    @media screen and (max-width: 500px) {
+      .container{ padding:0 16px }
+      .nav{ height:64px; justify-content:space-between; }
+      .links{ 
+        display:none; 
+        flex-direction:column; 
+        position:absolute; 
+        top:64px; 
+        left:0; 
+        width:100%; 
+        background:var(--bg); 
+        padding:16px; 
+        height:100vh; 
+      }
+      .links.active{ display:flex; }
+      .links a{ padding:6px 2px }
+      .burger{ display:block; }
+      .burger span{ 
+        display:block; 
+        width:20px; 
+        height:2px; 
+        background:var(--fg); 
+        margin-bottom:4px; 
+      }
+      .brand{ margin-bottom:0; justify-content:center; }
+      .hero{ grid-template-columns:1fr; padding:16px 0 20px }
+      .hero h1{ font-size:32px }
+      .hero p.lead{ font-size:16px }
+      .grid-3, .grid-2{ grid-template-columns:1fr }
+      .tag, .pill{ font-size:11px }
+      .btn{ padding:9px 12px; border-radius:10px }
+      header .container{ 
+        padding-left:max(16px, env(safe-area-inset-left)); 
+        padding-right:max(16px, env(safe-area-inset-right)); 
+      }
+      .photo-wrap{ max-width:360px }
+      .skills{ grid-template-columns:repeat(2,1fr); gap:10px }
+    }
+  }
+
+  /* Tablet devices (768px - 1024px) */
+  @media screen and (min-width:768px) and (max-width:1024px) {
+    .container{ max-width:720px }
+    
+    /* Portrait orientation */
+    @media (orientation:portrait) {
+      .hero{ grid-template-columns:1fr; padding:64px 0 24px }
+      .hero h1{ font-size:40px }
+      .grid-3{ grid-template-columns:1fr }
+      .grid-2{ grid-template-columns:1fr }
+      .skills{ grid-template-columns:repeat(3,1fr) }
+      .photo-wrap{ max-width:420px }
+    }
+    
+    /* Landscape orientation */
+    @media (orientation:landscape) {
+      .container{ max-width:980px }
+      .hero h1{ font-size:44px }
+      .grid-3{ grid-template-columns:repeat(2,1fr) }
+      .grid-2{ grid-template-columns:repeat(2,1fr) }
+      .skills{ grid-template-columns:repeat(3,1fr) }
+    }
+  }

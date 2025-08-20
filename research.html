@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<!-- Save this file as research.html in your repo -->
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Oleh Boloban — Research & Auri</title>
+  <meta name="description" content="Oleh Boloban — PhD / MSc in Computer Science, Software Engineer. Research on AI & microservices for sleep‑apnea diagnosis and the founder of Auri — AI assistance for mental health." />
+  <link rel="icon" href="./public/img/auri/favicon.ico"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Baloo+2:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/auri.css">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Oleh Boloban — Research & Auri" />
+  <meta property="og:description" content="AI & microservices for sleep‑apnea diagnosis. Explore research, publications, and Auri — AI assistance for mental health." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="./public/img/auri/logo.png" />
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Person","name":"Oleh Boloban","jobTitle":"Software Engineer, Researcher","alumniOf":"PhD Computer Science","url":"https://olegbb1502.github.io","sameAs":["https://orcid.org/0009-0004-9074-4077"]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Organization","name":"Auri","url":"http://a-uri.com","logo":"./public/img/auri/logo.png","description":"AI assistance for mental health, creating personalized recommendations from physiological and behavioral data."}
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <img src="./public/img/auri/logo.png" alt="Auri logo"/>
+      </div>
+      <nav class="links">
+        <a href="#research" data-i18n="nav.research">Research</a>
+        <a href="#publications" data-i18n="nav.pubs">Publications</a>
+        <a href="#startup" data-i18n="nav.startup">Startup</a>
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a class="action" href="#contact" data-i18n="nav.contact">Contact</a>
+        <select class="lang" id="lang">
+          <option value="en">EN</option>
+          <option value="uk">UA</option>
+        </select>
+      </nav>
+      <div class="burger" id="burger">
+        <span></span>
+        <span></span>
+    </div>
+  </header>
+
+  <main id="top" class="container">
+    <!-- Hero -->
+    <section class="hero">
+      <div>
+        <span class="tag" data-i18n="hero.roleTag">Researcher • Founder • Full‑stack Engineer</span>
+        <h1>Oleh Boloban <span class="light" data-i18n="hero.titleLight">Master of Computer Science</span></h1>
+        <p class="lead" data-i18n-html="hero.lead">AI & microservices for <strong>sleep‑apnea diagnosis</strong>. I build real‑world impact from peer‑reviewed research and apply it in <strong>Auri</strong>, an AI assistant for mental health.</p>
+        <div class="chips">
+          <span class="pill" data-i18n="hero.chip1">AI for Respiratory Health</span>
+          <span class="pill" data-i18n="hero.chip2">Microservices</span>
+          <span class="pill" data-i18n="hero.chip3">Wearables / HR • SpO₂ • HRV</span>
+        </div>
+        <div style="margin-top:16px; display:flex; gap:10px; flex-wrap:wrap">
+          <a class="btn ghost" href="./public/OlehBolobanCV(H).pdf" target="_blank" rel="noopener" data-i18n="cta.cv">View CV</a>
+          <a class="btn ghost" href="https://orcid.org/0009-0004-9074-4077" target="_blank" rel="noopener" data-i18n="cta.orcid">View ORCID</a>
+        </div>
+      <div style="margin-top:24px;">
+        <a href="http://a-uri.com/" target="_blank" rel="noopener" class="btn" style="font-size:18px; padding:16px 32px; border-radius:16px; font-weight:700; background:var(--accent); color:#fff; display:inline-block;">
+          Visit website &rarr;
+        </a>
+      </div>
+      </div>
+      <div>
+        <img class="heroimg" src="./public/img/auri/fox.png" alt="Auri fox" />
+      </div>
+    </section>
+
+    <!-- Research Highlights -->
+    <section id="research">
+      <h2 data-i18n="sec.research">Research Highlights</h2>
+      <div class="grid-3">
+        <div class="card">
+          <div class="pill" data-i18n="research.card1.badge">Integrated Home System</div>
+          <h3 data-i18n="research.card1.title">End‑to‑end tracking & prediction outside clinics</h3>
+          <p data-i18n="research.card1.text">A fully integrated system for tracking and predicting respiratory pathologies in home environments, built on microservices for easy sensor/model integration and scalability across user groups.</p>
+        </div>
+        <div class="card">
+          <div class="pill" data-i18n="research.card2.badge">AI Sleep Monitoring</div>
+          <h3 data-i18n="research.card2.title">Continuous monitoring, trend analysis & risk alerts</h3>
+          <p data-i18n="research.card2.text">Home‑use AI system that monitors respiratory parameters during sleep, analyzes trends, and predicts potential risks so patients can seek timely medical attention.</p>
+        </div>
+        <div class="card">
+          <div class="pill" data-i18n="research.card3.badge">Clinician Support</div>
+          <h3 data-i18n="research.card3.title">Remote access & decision support for doctors</h3>
+          <p data-i18n="research.card3.text">Secure physician dashboards integrate with medical platforms to review longitudinal data and support informed diagnosis and treatment while reducing clinic workload.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Publications (simple list with links) -->
+    <section id="publications">
+      <h2 data-i18n="sec.pubs">Publications</h2>
+      <div class="card">
+        <ul class="list" id="pubList">
+            <li>Scientific article Boloban, O., Pysmennyi, I., Kyslyi, R., & Kyriusha, B. (2024). Development of a patient health monitoring system based on a service-oriented architecture using artificial intelligence. Technology Audit and Production Reserves, 3(2(77)), P. 23-29.</li>  
+            <li>Scientific article Petrenko, A. I., Boloban, O. A. (2025). Development of infrastructure for the integration of artificial intelligence into telemedicine systems using microservice architecture. Tavrian Scientific Bulletin. Series: Technical Sciences, (1), P. 148-158.</li>
+            <li>Scientific article Boloban O.A., Petrenko A.I. Features of the EMD algorithm application for estimation of blood oxygen level. Scientific notes of Vernadsky TNU. Series: Technical sciences. Vol. 34 (73). № 2. 2023. P. 125-130.</li>
+            <li>Scientific article Petrenko, A., Boloban, O. (2023). Generalization of information with examples on the possibilities of using a service-oriented approach and artificial intelligence technologies in the field of e-health. Technological audit and production reserves, 4 (2 (72)), P. 10-17.</li>
+            <li>Scientific article Petrenko, A., Boloban, O. (2024). Investigation of the effectiveness of real-time filtering algorithms for biomedical signals. Infocommunication and computer technologies, 2(08), P. 53-61.</li>
+            </li>
+          <!-- Replace with your own links -->
+          <li><a href="https://orcid.org/0009-0004-9074-4077" target="_blank" rel="noopener">See all publications on ORCID →</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Startup -->
+    <section id="startup">
+      <h2>Auri</h2>
+      <p class="lead" data-i18n-html="startup.lead">AI assistance for mental health. Auri creates <strong>personalized recommendations</strong> from your physiological & activity records (sleep, HR, SpO₂, HRV, work time, mood, steps, etc.), <strong>classifies disorder risk/type</strong>, and drafts guidance with an LLM.</p>
+      <div class="grid-2">
+        <div class="card">
+          <h3 data-i18n="startup.problem.title">The Problem</h3>
+          <ul class="list">
+            <li data-i18n="startup.problem.b1">Limited access to timely mental‑health evaluation.</li>
+            <li data-i18n="startup.problem.b2">Wearable data is fragmented and under‑used.</li>
+            <li data-i18n="startup.problem.b3">Lack of continuous, personalized monitoring and feedback.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3 data-i18n="startup.solution.title">Our Solution</h3>
+          <ul class="list">
+            <li data-i18n="startup.solution.b1">Unified pipeline for multi‑modal signals (sleep, HR/HRV, SpO₂, activity, mood).</li>
+            <li data-i18n="startup.solution.b2">AI models to detect patterns and classify likely disorder categories.</li>
+            <li data-i18n="startup.solution.b3">LLM‑generated, clinician‑informed recommendations and next steps.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="grid-3" style="margin-top:16px">
+        <div class="card">
+          <h3 data-i18n="startup.who.title">Who we serve</h3>
+          <p data-i18n="startup.who.p">Individuals tracking well‑being, clinicians needing longitudinal data, and research teams running digital‑health studies.</p>
+        </div>
+        <div class="card">
+          <h3 data-i18n="startup.traction.title">Traction</h3>
+          <div class="timeline">
+            <div class="t-item" data-i18n-html="startup.traction.i1"><strong>2025</strong> – Building MVP & private pilot waitlist.</div>
+            <div class="t-item" data-i18n-html="startup.traction.i2"><strong>2024</strong> – Research prototypes validated on sleep‑apnea use cases.</div>
+          </div>
+        </div>
+        <div class="card">
+          <h3 data-i18n="startup.cta.title">Call to Action</h3>
+          <p data-i18n="startup.cta.p">Want to collaborate, invest, or run a pilot?</p>
+          <p><a class="btn" href="#contact" data-i18n="startup.cta.btn">Get in touch</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <h2 data-i18n="sec.about">About</h2>
+      <div class="grid-2">
+        <div class="card">
+          <h3 data-i18n="about.bio.title">Bio</h3>
+          <p data-i18n-html="about.bio.text">Oleh Boloban is a software engineer and researcher (PhD in Computer Science) focusing on AI and microservice architectures for healthcare. His recent work builds home‑use systems for monitoring and predicting respiratory disorders during sleep, and remote‑care workflows for clinicians. He is the founder of <strong>Auri</strong>, bringing these capabilities to mental‑health support.</p>
+          <p class="muted" data-i18n="about.bio.keywords">Keywords: machine learning, neural networks, classification, Internet of Things (IoT), energy-efficient computing, formal specification, distributed systems, sleep apnea and hypopnea, microservices, COVID-19, modeling, execution time reduction, Temporal Logic of Actions (TLA).</p>
+        </div>
+        <div class="card">
+          <h3 data-i18n="about.open.title">Open to</h3>
+          <ul class="list">
+            <li data-i18n="about.open.b1">Research collaborations</li>
+            <li data-i18n="about.open.b2">Industry pilots / partnerships</li>
+            <li data-i18n="about.open.b3">Speaking & mentoring</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2 data-i18n="sec.contact">Contact</h2>
+      <div class="grid-2">
+        <div class="card">
+          <h3 data-i18n="contact.email.title">Email</h3>
+          <p><a id="emailLink" href="mailto:boloban.oleh@gmail.com">boloban.oleh@gmail.com</a></p>
+          <h3 data-i18n="contact.cal.title">Telegram</h3>
+          <p><a href="https://t.me/Oleg_Boloban" id="telegram" target="_blank" rel="noopener">@Oleg_Boloban</a></p>
+        </div>
+        <div class="card">
+          <h3 data-i18n="contact.social.title">Social</h3>
+          <p>
+            <a href="https://github.com/olegbb1502" target="_blank" rel="noopener">GitHub</a> ·
+            <a href="https://www.linkedin.com/in/oleg-boloban-b394b4151/" target="_blank" rel="noopener">LinkedIn</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="container">
+        <div style="display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap">
+          <div data-i18n-html="footer.copyright">© <span id="year"></span> Oleh Boloban — USA · Ukraine</div>
+          <div class="muted" data-i18n="footer.built">Hosted on GitHub Pages</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    // Current year
+    document.querySelector('#year').textContent = new Date().getFullYear();
+
+    // --- i18n ---
+    const I18N_FALLBACK = {
+      en: {
+        nav:{research:'Research', pubs:'Publications', startup:'Startup', about:'About', contact:'Contact'},
+        cta:{book:'Book a call', cv:'View CV', orcid:'View ORCID'},
+        sec:{research:'Research Highlights', pubs:'Publications', about:'About', contact:'Contact'},
+        hero:{roleTag:'Researcher • Founder • Full‑stack Engineer', titleLight:'Master of Computer Science', lead:'AI & microservices for <strong>sleep‑apnea diagnosis</strong>. I build real‑world impact from peer‑reviewed research and apply it in <strong>Auri</strong>, an AI assistant for mental health.', chip1:'AI for Respiratory Health', chip2:'Microservices', chip3:'Wearables / HR • SpO₂ • HRV'},
+        research:{
+          card1:{badge:'Integrated Home System', title:'End‑to‑end tracking & prediction outside clinics', text:'A fully integrated system for tracking and predicting respiratory pathologies in home environments, built on microservices for easy sensor/model integration and scalability across user groups.'},
+          card2:{badge:'AI Sleep Monitoring', title:'Continuous monitoring, trend analysis & risk alerts', text:'Home‑use AI system that monitors respiratory parameters during sleep, analyzes trends, and predicts potential risks so patients can seek timely medical attention.'},
+          card3:{badge:'Clinician Support', title:'Remote access & decision support for doctors', text:'Secure physician dashboards integrate with medical platforms to review longitudinal data and support informed diagnosis and treatment while reducing clinic workload.'}
+        },
+        footer:{copyright:'© <span id="year"></span> Oleh Boloban — USA · Ukraine', built:'Hosted on GitHub Pages'}
+      },
+      uk: {
+        nav:{research:'Дослідження', pubs:'Публікації', startup:'Стартап', about:'Про мене', contact:'Контакти'},
+        cta:{book:'Записатися на дзвінок', cv:'Переглянути CV', orcid:'Переглянути ORCID'},
+        sec:{research:'Ключові результати досліджень', pubs:'Публікації', about:'Про мене', contact:'Контакти'},
+        hero:{roleTag:'Дослідник • Засновник • Фулстек‑інженер', titleLight:'PhD', lead:'ШІ та мікросервіси для <strong>діагностики апное сну</strong>. Переношу результати досліджень у практику й застосовую їх в <strong>Auri</strong> — ШІ‑асистенті для психічного здоров’я.', chip1:'ШІ для респіраторного здоров’я', chip2:'Мікросервіси', chip3:'Вейрабли / HR • SpO₂ • HRV'},
+        research:{
+          card1:{badge:'Інтегрована домашня система', title:'Кінцевий трекінг і прогнозування поза клініками', text:'Повністю інтегрована система відстеження та прогнозування респіраторних патологій у домашніх умовах. Мікросервісна архітектура спрощує додавання нових сенсорів і моделей та масштабується для різних груп користувачів.'},
+          card2:{badge:'Моніторинг сну на ШІ', title:'Безперервний моніторинг, аналіз трендів і ризик‑сповіщення', text:'Домашня система на базі ШІ відстежує параметри дихання під час сну, аналізує тренди та прогнозує ризики, щоб пацієнти вчасно звертались до лікаря.'},
+          card3:{badge:'Підтримка лікарів', title:'Віддалений доступ і підтримка рішень', text:'Безпечні кабінети лікаря інтегруються з медичними платформами для перегляду динаміки стану пацієнта та допомагають приймати обґрунтовані рішення, зменшуючи навантаження на клініки.'}
+        },
+        footer:{copyright:'© <span id="year"></span> Oleh Boloban — США · Україна', built:'Розміщено на GitHub Pages'}
+      }
+    };
+
+    async function loadExternal(locale){
+      try{ const r = await fetch(`./i18n/${locale}.json`); if(r.ok) return await r.json(); }catch(_){}
+      return I18N_FALLBACK[locale];
+    }
+
+    const langSel = document.getElementById('lang');
+    let I18N = I18N_FALLBACK['en'];
+    const get = (o,p)=>p.split('.').reduce((a,k)=>a&&a[k],o);
+    function applyI18N(){
+      document.querySelectorAll('[data-i18n]').forEach(el=>{ const v=get(I18N,el.getAttribute('data-i18n')); if(v!=null) el.textContent=v; });
+      document.querySelectorAll('[data-i18n-html]').forEach(el=>{ const v=get(I18N,el.getAttribute('data-i18n-html')); if(v!=null) el.innerHTML=v; });
+    }
+    (async ()=>{ const init=(localStorage.getItem('lang')||(navigator.language||'en').slice(0,2)); const lang=['en','uk'].includes(init)?init:'en'; langSel.value=lang; I18N=await loadExternal(lang)||I18N_FALLBACK[lang]; document.documentElement.lang=lang; applyI18N(); })();
+    langSel.addEventListener('change', async ()=>{ const lang=langSel.value; localStorage.setItem('lang',lang); I18N=await loadExternal(lang)||I18N_FALLBACK[lang]; document.documentElement.lang=lang; applyI18N(); });
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{ a.addEventListener('click',e=>{ const t=document.querySelector(a.getAttribute('href')); if(t){e.preventDefault(); t.scrollIntoView({behavior:'smooth', block:'start'});} });});
+
+    // Burger menu
+    const burger = document.getElementById('burger');
+    const nav = document.querySelector('.links');
+    burger.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

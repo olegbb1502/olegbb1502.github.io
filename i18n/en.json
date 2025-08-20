@@ -1,0 +1,68 @@
+{
+    "nav": { "research": "Research", "pubs": "Publications", "startup": "Startup", "about": "About", "contact": "Contact" },
+    "cta": { "book": "Book a call", "cv": "View CV", "orcid": "View ORCID" },
+    "sec": { "research": "Research Highlights", "pubs": "Publications", "about": "About", "contact": "Contact" },
+    "hero": {
+      "roleTag": "Researcher • Founder • Full-stack Engineer",
+      "titleLight": "Master of Computer Science",
+      "lead": "AI & microservices for <strong>sleep-apnea diagnosis</strong>. I build real-world impact from peer-reviewed research and apply it in <strong>Auri</strong>, an AI assistant for mental health.",
+      "chip1": "AI for Respiratory Health",
+      "chip2": "Microservices",
+      "chip3": "Wearables / HR • SpO₂ • HRV"
+    },
+    "research": {
+      "card1": {
+        "badge": "Integrated Home System",
+        "title": "End-to-end tracking & prediction outside clinics",
+        "text": "A fully integrated system for tracking and predicting respiratory pathologies in home environments, built on microservices for easy sensor/model integration and scalability across user groups."
+      },
+      "card2": {
+        "badge": "AI Sleep Monitoring",
+        "title": "Continuous monitoring, trend analysis & risk alerts",
+        "text": "Home-use AI system that monitors respiratory parameters during sleep, analyzes trends, and predicts potential risks so patients can seek timely medical attention."
+      },
+      "card3": {
+        "badge": "Clinician Support",
+        "title": "Remote access & decision support for doctors",
+        "text": "Secure physician dashboards integrate with medical platforms to review longitudinal data and support informed diagnosis and treatment while reducing clinic workload."
+      }
+    },
+    "pubs": {
+      "searchPlaceholder": "Search by title, venue, or year…",
+      "firstOnly": "First-author only",
+      "importOrcid": "Import from ORCID",
+      "viewOrcid": "View ORCID →",
+      "bibtex": "BibTeX export",
+      "noPubs": "No publications added yet — use \"Import from ORCID\" or edit the publications array.",
+      "orcidError": "Could not load from ORCID in this environment. You can still add items manually."
+    },
+    "startup": {
+      "lead": "AI assistance for mental health. Auri creates <strong>personalized recommendations</strong> from your physiological & activity records (sleep, HR, SpO₂, HRV, work time, mood, steps, etc.), <strong>classifies disorder risk/type</strong>, and drafts guidance with an LLM.",
+      "problem": {
+        "title": "The Problem",
+        "b1": "Limited access to timely mental-health evaluation.",
+        "b2": "Wearable data is fragmented and under-used.",
+        "b3": "Lack of continuous, personalized monitoring and feedback."
+      },
+      "solution": {
+        "title": "Our Solution",
+        "b1": "Unified pipeline for multi-modal signals (sleep, HR/HRV, SpO₂, activity, mood).",
+        "b2": "AI models to detect patterns and classify likely disorder categories.",
+        "b3": "LLM-generated, clinician-informed recommendations and next steps."
+      },
+      "who": { "title": "Who we serve", "p": "Individuals tracking well-being, clinicians needing longitudinal data, and research teams running digital-health studies." },
+      "traction": { "title": "Traction", "i1": "<strong>2025</strong> – Building MVP & private pilot waitlist.", "i2": "<strong>2024</strong> – Research prototypes validated on sleep-apnea use cases." },
+      "cta": { "title": "Call to Action", "p": "Want to collaborate, invest, or run a pilot?", "btn": "Get in touch" }
+    },
+    "about": {
+      "bio": {
+        "title": "Bio",
+        "text": "Oleh Boloban is a software engineer and researcher (MSc in Computer Science) focusing on AI and microservice architectures for healthcare. His recent work builds home-use systems for monitoring and predicting respiratory disorders during sleep, and remote-care workflows for clinicians. He is the founder of <strong>Auri</strong>, bringing these capabilities to mental-health support.",
+        "keywords": "Keywords: machine learning, neural networks, classification, Internet of Things (IoT), energy-efficient computing, formal specification, distributed systems, sleep apnea and hypopnea, microservices, COVID-19, modeling, execution time reduction, Temporal Logic of Actions (TLA)."
+      },
+      "open": { "title": "Open to", "b1": "Research collaborations", "b2": "Industry pilots / partnerships", "b3": "Speaking & mentoring" }
+    },
+    "contact": { "email": { "title": "Email" }, "cal": { "title": "Calendly", "link": "Book a meeting" }, "social": { "title": "Social" } },
+    "footer": { "copyright": "© <span id=\"year\"></span> Oleh Boloban — USA · Ukraine", "built": "Hosted on GitHub Pages" }
+  }
+  
