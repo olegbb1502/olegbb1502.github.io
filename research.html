@@ -20,7 +20,7 @@
 
   <!-- Schema.org JSON-LD -->
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"Person","name":"Oleh Boloban","jobTitle":"Software Engineer, Researcher","alumniOf":"PhD Computer Science","url":"https://olegbb1502.github.io","sameAs":["https://orcid.org/0009-0004-9074-4077"]}
+  {"@context":"https://schema.org","@type":"Person","name":"Oleh Boloban","jobTitle":"RnD Engineer, Researcher","alumniOf":"PhD Computer Science","url":"https://olegbb1502.github.io","sameAs":["https://orcid.org/0009-0004-9074-4077"]}
   </script>
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"Organization","name":"Auri","url":"http://a-uri.com","logo":"./public/img/auri/logo.png","description":"AI assistance for mental health, creating personalized recommendations from physiological and behavioral data."}
@@ -53,7 +53,7 @@
     <!-- Hero -->
     <section class="hero">
       <div>
-        <span class="tag" data-i18n="hero.roleTag">Researcher • Founder • Full‑stack Engineer</span>
+        <span class="tag" data-i18n="hero.roleTag">Researcher • Founder • RnD Engineer</span>
         <h1>Oleh Boloban <span class="light" data-i18n="hero.titleLight">Master of Computer Science</span></h1>
         <p class="lead" data-i18n-html="hero.lead">AI & microservices for <strong>sleep‑apnea diagnosis</strong>. I build real‑world impact from peer‑reviewed research and apply it in <strong>Auri</strong>, an AI assistant for mental health.</p>
         <div class="chips">
@@ -66,7 +66,7 @@
           <a class="btn ghost" href="https://orcid.org/0009-0004-9074-4077" target="_blank" rel="noopener" data-i18n="cta.orcid">View ORCID</a>
         </div>
       <div style="margin-top:24px;">
-        <a href="http://a-uri.com/" target="_blank" rel="noopener" class="btn" style="font-size:18px; padding:16px 32px; border-radius:16px; font-weight:700; background:var(--accent); color:#fff; display:inline-block;">
+        <a href="http://a-uri.com/" target="_blank" rel="noopener" class="btn" style="font-size:18px; padding:16px 32px; border-radius:16px; font-weight:700; background:var(--accent); color:#fff; display:inline-block;" data-i18n="cta.visit">
           Visit website &rarr;
         </a>
       </div>
@@ -216,7 +216,7 @@
     const I18N_FALLBACK = {
       en: {
         nav:{research:'Research', pubs:'Publications', startup:'Startup', about:'About', contact:'Contact'},
-        cta:{book:'Book a call', cv:'View CV', orcid:'View ORCID'},
+        cta:{book:'Book a call', cv:'View CV', orcid:'View ORCID', visit:'Visit website &rarr;'},
         sec:{research:'Research Highlights', pubs:'Publications', about:'About', contact:'Contact'},
         hero:{roleTag:'Researcher • Founder • Full‑stack Engineer', titleLight:'Master of Computer Science', lead:'AI & microservices for <strong>sleep‑apnea diagnosis</strong>. I build real‑world impact from peer‑reviewed research and apply it in <strong>Auri</strong>, an AI assistant for mental health.', chip1:'AI for Respiratory Health', chip2:'Microservices', chip3:'Wearables / HR • SpO₂ • HRV'},
         research:{
@@ -228,7 +228,7 @@
       },
       uk: {
         nav:{research:'Дослідження', pubs:'Публікації', startup:'Стартап', about:'Про мене', contact:'Контакти'},
-        cta:{book:'Записатися на дзвінок', cv:'Переглянути CV', orcid:'Переглянути ORCID'},
+        cta:{book:'Записатися на дзвінок', cv:'Переглянути CV', orcid:'Переглянути ORCID', visit:'Відвідати вебсайт'},
         sec:{research:'Ключові результати досліджень', pubs:'Публікації', about:'Про мене', contact:'Контакти'},
         hero:{roleTag:'Дослідник • Засновник • Фулстек‑інженер', titleLight:'PhD', lead:'ШІ та мікросервіси для <strong>діагностики апное сну</strong>. Переношу результати досліджень у практику й застосовую їх в <strong>Auri</strong> — ШІ‑асистенті для психічного здоров’я.', chip1:'ШІ для респіраторного здоров’я', chip2:'Мікросервіси', chip3:'Вейрабли / HR • SpO₂ • HRV'},
         research:{
