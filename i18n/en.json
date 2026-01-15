@@ -57,7 +57,7 @@
     "about": {
       "bio": {
         "title": "Bio",
-        "text": "Oleh Boloban is a software engineer and researcher (MSc in Computer Science) focusing on AI and microservice architectures for healthcare. His recent work builds home-use systems for monitoring and predicting respiratory disorders during sleep, and remote-care workflows for clinicians. He is the founder of <strong>Auri</strong>, bringing these capabilities to mental-health support.",
+        "text": "Oleh Boloban is a software engineer and researcher (PhD in Computer Science) focusing on AI and microservice architectures for healthcare. His recent work builds home-use systems for monitoring and predicting respiratory disorders during sleep, and remote-care workflows for clinicians. He is the founder of <strong>Auri</strong>, bringing these capabilities to mental-health support.",
         "keywords": "Keywords: machine learning, neural networks, classification, Internet of Things (IoT), energy-efficient computing, formal specification, distributed systems, sleep apnea and hypopnea, microservices, COVID-19, modeling, execution time reduction, Temporal Logic of Actions (TLA)."
       },
       "open": { "title": "Open to", "b1": "Research collaborations", "b2": "Industry pilots / partnerships", "b3": "Speaking & mentoring" }
