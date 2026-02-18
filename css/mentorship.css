@@ -55,7 +55,11 @@ body::after {
   z-index: 0;
 }
 
-section, header, footer { position: relative; z-index: 1; }
+section, footer { position: relative; z-index: 1; }
+
+/* header must NOT form a stacking context — the fixed nav inside needs to float
+   above all sections (z-index 1) in the root context at its own z-index: 100 */
+header { position: static; }
 
 
 /* ════════════════════════════════
