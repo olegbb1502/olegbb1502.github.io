@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Менторство | Від першого кроку до Senior</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/mentorship.css" />
+</head>
+<body>
+
+  <!-- Floating particles -->
+  <div class="particles" id="particles"></div>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#" class="nav-logo">OLEHB<span>.</span>IT</a>
+    <a href="#packages" class="nav-cta">Переглянути пакети</a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-badge">Менторська програма · Активна 2026</div>
+
+    <h1>
+      <span class="glitch" data-text="ПРИПИНИ">ПРИПИНИ</span> ГАДАТИ.<br />
+      <span class="highlight">ПОЧИНАЙ</span> РОСТИ.
+    </h1>
+
+    <p>Від першого кроку в IT до стратегії рівня Senior. Персоналізоване менторство, що допоможе тобі опанувати ринок праці.</p>
+
+    <div class="hero-cta">
+      <a href="#packages" class="btn-primary magnetic">
+        Почати з €10
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <a href="#ultimate" class="btn-ghost">
+        Повний пакет
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7h9M8 3.5l3.5 3.5L8 10.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="stat-num">50<span>+</span></div>
+        <div class="stat-label">Менті</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">4<span>x</span></div>
+        <div class="stat-label">Середній ріст зарплати</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">8<span>+</span></div>
+        <div class="stat-label">Років досвіду в IT</div>
+      </div>
+    </div>
+
+    <!-- <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      Скрол
+    </div> -->
+  </section>
+
+  <!-- PACKAGES -->
+  <section class="packages-section" id="packages">
+    <div class="packages-header">
+      <div class="section-label">Послуги</div>
+      <h2 class="section-title">4 пакети. 1 мета —<br />твій наступний рівень.</h2>
+      <p class="section-sub">Обери програму залежно від того, де ти зараз знаходишся на своєму шляху.</p>
+    </div>
+
+    <div class="packages-grid">
+
+      <!-- CAREER -->
+      <div class="pkg-card">
+        <div class="pkg-number">01</div>
+        <div class="pkg-tag">CAREER</div>
+        <div class="pkg-name">Перехід в IT</div>
+        <div class="pkg-tagline">Для тих, хто хоче змінити сферу, але боїться витратити час даремно.</div>
+        <div class="pkg-focus">Фокус: правильна ніша та дорожня карта</div>
+        <ul class="pkg-list">
+          <li>Вибір ніші на основі твоїх сильних сторін</li>
+          <li>Персональний бренд та стиль подачі себе</li>
+          <li>Вступ до LinkedIn: навіщо та як використовувати</li>
+          <li>Чіткий план навчання та пошуку першої роботи</li>
+        </ul>
+        <div class="pkg-price">
+            <div class="ultimate-price-tag white">
+        <span class="currency">€</span>10</div>
+          <div class="pkg-price-arrow">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 3h8v8M3 11L11 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- INTERN -->
+      <div class="pkg-card">
+        <div class="pkg-number">02</div>
+        <div class="pkg-tag">INTERN</div>
+        <div class="pkg-name">Мисливець на роботу</div>
+        <div class="pkg-tagline">Для випускників, що застрягли в пастці «Немає досвіду».</div>
+        <div class="pkg-focus">Фокус: максимальна конверсія та помітність</div>
+        <ul class="pkg-list">
+          <li>Повний ревʼю CV та адаптація під ATS-системи</li>
+          <li>Аудит LinkedIn та досвіду</li>
+          <li>Розробка проєктів: як подати навички як практичний досвід</li>
+          <li>Стратегія пошуку роботи: супровідні листи та нетворкінг</li>
+        </ul>
+        <div class="pkg-price">
+            <div class="ultimate-price-tag white"><span class="currency">€</span>30</div>
+          <div class="pkg-price-arrow">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 3h8v8M3 11L11 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- JUNIOR -->
+      <div class="pkg-card">
+        <div class="pkg-number">03</div>
+        <div class="pkg-tag">JUNIOR</div>
+        <div class="pkg-name">Акселератор</div>
+        <div class="pkg-tagline">Для тих, хто вже працює, але відчуває стагнацію.</div>
+        <div class="pkg-focus">Фокус: підвищення зарплати та перехід на Strong-рівень</div>
+        <ul class="pkg-list">
+          <li>Оцінка компетенцій: виявлення сліпих зон</li>
+          <li>Дорожня карта росту на 1, 3 або 6 місяців</li>
+          <li>Оновлення CV: акцент на реальному впливі</li>
+          <li>Ревʼю навичок для підготовки до наступного рівня</li>
+        </ul>
+        <div class="pkg-price">
+          <div class="ultimate-price-tag white"><span class="currency">€</span>50</div>
+          <div class="pkg-price-arrow">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 3h8v8M3 11L11 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- MIDDLE -->
+      <div class="pkg-card">
+        <div class="pkg-number">04</div>
+        <div class="pkg-tag">MIDDLE</div>
+        <div class="pkg-name">Стратег</div>
+        <div class="pkg-tagline">Для профі, що рухаються за межі чистого кодування.</div>
+        <div class="pkg-focus">Фокус: ownership, нетворкінг та сеньорність</div>
+        <ul class="pkg-list">
+          <li>Глибокий аудит досвіду, технологій та soft skills</li>
+          <li>Побудова експертизи: як «продати» свою сеньорність</li>
+          <li>Менторство з ownership та проактивності</li>
+          <li>Аналіз інтервʼю: деконструкція реальних співбесід для виправлення помилок</li>
+        </ul>
+        <div class="pkg-price">
+          <div class="ultimate-price-tag white"><span class="currency">€</span>75</div>
+          <div class="pkg-price-arrow">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 3h8v8M3 11L11 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ULTIMATE -->
+  <section class="ultimate-section" id="ultimate">
+    <div class="ultimate-inner">
+      <div class="ultimate-left">
+        <div class="ultimate-badge">Найбільш популярне</div>
+        <h2 class="ultimate-title">ПОВНА ПІДГОТОВКА<br />ДО РИНКУ</h2>
+        <div class="ultimate-price-tag">
+          <span class="currency">€</span>350
+        </div>
+        <a href="https://t.me/olegbolob" class="btn-white" target="_blank" rel="noopener">
+          Зайняти місце
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+      <div class="ultimate-right">
+        <div class="phase-list">
+          <div class="phase-item">
+            <div class="phase-num">01</div>
+            <div class="phase-content">
+              <h4>Глибокий аудит</h4>
+              <p>Аналіз досвіду та навичок. Виявлення прогалин і сильних сторін.</p>
+            </div>
+          </div>
+          <div class="phase-item">
+            <div class="phase-num">02</div>
+            <div class="phase-content">
+              <h4>Преміум-упаковка</h4>
+              <p>CV, LinkedIn, Cover Letters — твій особистий бренд на максимум.</p>
+            </div>
+          </div>
+          <div class="phase-item">
+            <div class="phase-num">03</div>
+            <div class="phase-content">
+              <h4>Стратегія пошуку та підготовка до інтерв'ю</h4>
+              <p>Де шукати, як відповідати, як виділятись серед сотень кандидатів.</p>
+            </div>
+          </div>
+          <div class="phase-item">
+            <div class="phase-num">04</div>
+            <div class="phase-content">
+              <h4>Живий аналіз інтерв'ю</h4>
+              <p>Разом розбираємо одне з твоїх реальних інтерв'ю та виправляємо помилки.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOURLY -->
+  <section class="hourly-section">
+    <div class="hourly-text">
+      <div class="section-label">Консультація</div>
+      <h2 class="section-title">Потрібен<br />швидкий вхід?</h2>
+      <p class="section-sub">Один на один. Глибоке занурення в конкретну проблему. Прямий доступ до експертизи без зайвих слів.</p>
+      <a href="https://t.me/olegbolob" class="btn-primary magnetic" target="_blank" rel="noopener">
+        Записатись на сесію
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+
+    <div class="hourly-card">
+      <div class="pkg-tag">ПОЧАСОВА КОНСУЛЬТАЦІЯ</div>
+      <div class="hourly-price"><span>€</span>50</div>
+      <div class="hourly-per">/ Одна година</div>
+      <div class="feature-chips">
+        <div class="chip">Один на один</div>
+        <div class="chip">Будь-яке питання</div>
+        <div class="chip">Без шаблонів</div>
+        <div class="chip">Реальна практика</div>
+        <div class="chip">Запис дзвінку</div>
+      </div>
+      <a href="https://t.me/olegbolob" class="btn-primary" target="_blank" rel="noopener" style="width:100%;justify-content:center;">
+        Забронювати годину
+      </a>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials-section" id="testimonials">
+    <div class="testimonials-header">
+      <div class="section-label">Відгуки</div>
+      <h2 class="section-title">Що кажуть<br />ті, хто вже зробив крок.</h2>
+      <p class="section-sub">Реальні результати реальних людей — без прикрас.</p>
+    </div>
+
+    <div class="testimonials-grid">
+
+      <div class="review-card">
+        <div class="review-quote-mark">«</div>
+        <p class="review-text">Два роки топтався на місці й не розумів куди рухатись. Після першої сесії з Олегом усе стало на своє місце. Отримав перший оффер рівно через 3 місяці.</p>
+        <div class="review-stars">★★★★★</div>
+        <div class="review-divider"></div>
+        <div class="review-author">
+          <div class="review-avatar">ІК</div>
+          <div>
+            <div class="review-name">Іван К.</div>
+            <div class="review-role">Junior Frontend Developer</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-quote-mark">«</div>
+        <p class="review-text">Застрягла в пастці «немає досвіду» — нуль відповідей після десятків відгуків. Олег переробив моє CV і LinkedIn. Перше інтервʼю після цього — перший оффер.</p>
+        <div class="review-stars">★★★★★</div>
+        <div class="review-divider"></div>
+        <div class="review-author">
+          <div class="review-avatar">МТ</div>
+          <div>
+            <div class="review-name">Марія Т.</div>
+            <div class="review-role">Junior QA Engineer</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-quote-mark">«</div>
+        <p class="review-text">Хотів підвищення, але не знав як аргументувати. За 3 місяці ми прокачали мої хард скіли, переосмислили CV і я підняв зарплату на 60% — без зміни компанії.</p>
+        <div class="review-stars">★★★★★</div>
+        <div class="review-divider"></div>
+        <div class="review-author">
+          <div class="review-avatar">АВ</div>
+          <div>
+            <div class="review-name">Андрій В.</div>
+            <div class="review-role">Frontend Developer · Middle</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-quote-mark">«</div>
+        <p class="review-text">Перейшла в нову компанію зі зростанням зарплати на 80%. Олег допоміг правильно «продати» мій досвід і впевнено пройти 4 раунди технічних інтервʼю.</p>
+        <div class="review-stars">★★★★★</div>
+        <div class="review-divider"></div>
+        <div class="review-author">
+          <div class="review-avatar">НС</div>
+          <div>
+            <div class="review-name">Наталя С.</div>
+            <div class="review-role">Middle Backend Developer</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="cta-inner">
+      <div class="cta-label">Готовий почати?</div>
+      <h2 class="cta-title">Обери свій варіант<br />і зроби перший крок.</h2>
+
+      <div class="cta-options">
+        <a href="#packages" class="cta-option">
+          <span class="cta-option-tag">CAREER</span>
+          <span class="cta-option-name">Перехід в IT</span>
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7h9M8 3.5l3.5 3.5L8 10.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#packages" class="cta-option">
+          <span class="cta-option-tag">INTERN</span>
+          <span class="cta-option-name">Мисливець на роботу</span>
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7h9M8 3.5l3.5 3.5L8 10.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#packages" class="cta-option">
+          <span class="cta-option-tag">JUNIOR</span>
+          <span class="cta-option-name">Акселератор</span>
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7h9M8 3.5l3.5 3.5L8 10.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#packages" class="cta-option">
+          <span class="cta-option-tag">MIDDLE</span>
+          <span class="cta-option-name">Стратег</span>
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7h9M8 3.5l3.5 3.5L8 10.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+
+      <!-- <a href="https://t.me/olegbolob" class="btn-primary magnetic cta-btn" target="_blank" rel="noopener">
+        Написати та обрати пакет
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a> -->
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq-section" id="faq">
+    <div class="faq-header">
+      <div class="section-label">FAQ</div>
+      <h2 class="section-title">Часті запитання.</h2>
+      <p class="section-sub">Відповіді на те, що питають найчастіше перед початком.</p>
+    </div>
+
+    <div class="faq-list">
+
+      <details class="faq-item">
+        <summary>
+          Чи дійсно я отримаю користь від консультації за 5€?
+          <span class="faq-icon">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M6 1v10M1 6h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </span>
+        </summary>
+        <div class="faq-body">Так, це повноцінний «тест-драйв» мого підходу. За цей час ми розберемо твій поточний кейс, визначимо найперспективніший напрямок в IT саме для тебе та зробимо чекап твоїх очікувань. Це ідеальний перший крок, щоб не витрачати місяці на навчання «не тому».</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>
+          Що саме входить у «розбір реальної співбесіди» у пакеті за 350€?
+          <span class="faq-icon">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M6 1v10M1 6h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </span>
+        </summary>
+        <div class="faq-body">Це найцінніша частина. Ми аналізуємо запис або твої нотатки з реального інтерв'ю, яке ти пройшов. Я вкажу на помилки в технічних відповідях та софт-скілах, поясню, де ти «дешево» себе продав, і як скоригувати поведінку, щоб наступний дзвінок завершився оффером.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>
+          Я Junior і вже маю роботу, чим мені допоможе менторство?
+          <span class="faq-icon">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M6 1v10M1 6h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </span>
+        </summary>
+        <div class="faq-body">Ми працюємо на випередження. Я допоможу тобі вибудувати план розвитку (Roadmap) на 1–6 місяців, щоб ти не застряг на рутинних задачах. Навчу тебе брати Ownership (відповідальність за продукт), що є ключовим фактором для перегляду зарплати та отримання статусу Middle.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>
+          Чи допомагаєте ви з англійською мовою для LinkedIn та резюме?
+          <span class="faq-icon">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M6 1v10M1 6h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </span>
+        </summary>
+        <div class="faq-body">У пакетах Intern та Full Support (350€) ми повністю адаптуємо твій профіль та CV під міжнародні стандарти. Я не просто перекладаю текст, а використовую професійну термінологію та ключові слова, на які налаштовані алгоритми пошуку рекрутерів (ATS).</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>
+          Як проходить оплата та бронювання часу?
+          <span class="faq-icon">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M6 1v10M1 6h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </span>
+        </summary>
+        <div class="faq-body">Ти обираєш пакет, натискаєш кнопку і переходиш до оплати. Після цього відкривається календар, де ти бронюєш зручне вікно для нашої зустрічі в Zoom або Google Meet. Усі матеріали (записи, плани, оновлені файли) залишаються у тебе назавжди.</div>
+      </details>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <!-- <section class="contact-section" id="contact">
+    <div class="contact-text">
+      <div class="section-label">Зв'язок</div>
+      <h2 class="section-title">Є питання?<br />Напишіть мені.</h2>
+      <p class="section-sub">Заповни форму — відповім протягом доби. Або одразу напиши в Telegram, якщо зручніше.</p>
+      <a href="https://t.me/olegbolob" class="btn-ghost contact-tg" target="_blank" rel="noopener">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13M22 2L15 22l-4-9-9-4 20-7z"/></svg>
+        Написати в Telegram
+      </a>
+    </div> -->
+
+    <!-- TODO: replace action URL with your Formspree endpoint (https://formspree.io) or mailto:your@email.com -->
+    <!-- <form class="contact-form" action="#" method="POST">
+      <div class="form-group">
+        <label class="form-label" for="form-name">Ім'я</label>
+        <input class="form-input" id="form-name" name="name" type="text" placeholder="Олексій" required />
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="form-contact">Telegram або Email</label>
+        <input class="form-input" id="form-contact" name="contact" type="text" placeholder="@username або you@mail.com" required />
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="form-package">Пакет, що цікавить</label>
+        <select class="form-select" id="form-package" name="package">
+          <option value="">Обери пакет</option>
+          <option value="career">CAREER — Перехід в IT</option>
+          <option value="intern">INTERN — Мисливець на роботу</option>
+          <option value="junior">JUNIOR — Акселератор</option>
+          <option value="middle">MIDDLE — Стратег</option>
+          <option value="ultimate">ULTIMATE — Повна підготовка · €350</option>
+          <option value="hourly">Почасова консультація · €50/год</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="form-message">Повідомлення</label>
+        <textarea class="form-textarea" id="form-message" name="message" placeholder="Розкажи коротко про свою ситуацію або запитання…" required></textarea>
+      </div>
+      <button class="btn-primary form-submit" type="submit">
+        Надіслати
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </form>
+  </section> -->
+
+  <!-- FOOTER -->
+  <footer>
+    <div>
+      <div class="footer-brand">OLEHB<span>.</span>IT</div>
+      <div class="footer-tagline">Будуй кар'єру з наміром.</div>
+    </div>
+    <div class="footer-social">
+      <a href="https://www.youtube.com/@OBoloban" class="social-link" target="_blank" rel="noopener" aria-label="YouTube">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/>
+          <polygon fill="currentColor" stroke="none" points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/>
+        </svg>
+      </a>
+      <a href="https://www.instagram.com/olehb.it" class="social-link" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+          <circle cx="12" cy="12" r="4"/>
+          <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+        </svg>
+      </a>
+      <a href="https://t.me/+MLqCn5ugCmRhZDVi" class="social-link" target="_blank" rel="noopener" aria-label="Telegram">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 2L11 13M22 2L15 22l-4-9-9-4 20-7z"/>
+        </svg>
+      </a>
+    </div>
+    <div class="footer-copy">
+      © 2026 Oleh Boloban IT Mentorship<br />
+      Всі права захищені.
+    </div>
+  </footer>
+
+  <script src="./js/mentorship.js"></script>
+</body>
+</html>
