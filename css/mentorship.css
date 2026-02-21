@@ -419,6 +419,27 @@ nav {
 
 .packages-header { margin-bottom: 48px; }
 
+/* ── Currency badge (geo-detected, shown below section-sub) ── */
+.currency-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 16px;
+  padding: 5px 12px;
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  background: rgba(123, 46, 255, 0.06);
+  user-select: none;
+}
+.currency-badge svg { opacity: 0.6; flex-shrink: 0; }
+.currency-badge #currency-note {
+  color: var(--purple);
+  font-weight: 500;
+}
+
 @media (min-width: 900px) {
   .packages-header { margin-bottom: 64px; }
 }
@@ -1312,7 +1333,78 @@ footer {
 /* ── Magnetic base ── */
 .magnetic { display: inline-block; }
 
+
+/* ════════════════════════════════
+   HERO GLOBE (canvas)
+   ════════════════════════════════ */
+#hero-globe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.9;
+  /* canvas size is set by JS */
+}
+
+
+/* ════════════════════════════════
+   PARALLAX CUBES
+   ════════════════════════════════ */
+#hero-cubes {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+/* Wrapper handles the scroll-parallax translateY (set by JS) */
+.parallax-cube-wrap {
+  position: absolute;
+  will-change: transform;
+}
+
+/* Inner square — rotates via CSS animation, looks like a cube face */
+.parallax-cube {
+  border: 1px solid rgba(123, 46, 255, var(--border-op, 0.25));
+  background: rgba(123, 46, 255, var(--fill-op, 0.06));
+  animation: cube-spin var(--dur, 10s) linear infinite;
+}
+
+/* Inner "depth" face — gives the 3-D cube-outline illusion */
+.parallax-cube::after {
+  content: '';
+  position: absolute;
+  inset: 3px;
+  border: 1px solid rgba(123, 46, 255, calc(var(--border-op, 0.25) * 0.45));
+}
+
+@keyframes cube-spin {
+  to { transform: rotate(360deg); }
+}
+
+
+/* ════════════════════════════════
+   HERO CONTENT WRAPPER
+   (keeps text/CTAs above globe/cubes)
+   ════════════════════════════════ */
+.hero-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+
 /* ── Reduce motion ── */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+  /* Globe shows a static frame (drawn once by JS) */
+  #hero-globe { opacity: 0.45; }
+  /* Cubes stop spinning */
+  .parallax-cube { animation: none; }
 }

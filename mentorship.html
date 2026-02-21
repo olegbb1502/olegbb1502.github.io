@@ -186,45 +186,51 @@
   <!-- HERO -->
   <main>
   <section class="hero" id="hero" aria-labelledby="hero-heading">
-    <div class="hero-badge">Менторська програма · Активна 2026</div>
+    <!-- Purple globe canvas — injected by JS, sits at z-index:0 -->
+    <canvas id="hero-globe" aria-hidden="true"></canvas>
 
-    <h1 id="hero-heading">
-      <span class="glitch" data-text="ПРИПИНИ">ПРИПИНИ</span> ГАДАТИ.<br />
-      <span class="highlight">ПОЧИНАЙ</span> РОСТИ.
-    </h1>
+    <!-- Hero content sits above the globe at z-index:1 -->
+    <div class="hero-content">
+      <div class="hero-badge">Менторська програма · Активна 2026</div>
 
-    <p>Від першого кроку в IT до стратегії рівня Senior. Персоналізоване менторство, що допоможе тобі опанувати ринок праці.</p>
+      <h1 id="hero-heading">
+        <span class="glitch" data-text="ПРИПИНИ">ПРИПИНИ</span> ГАДАТИ.<br />
+        <span class="highlight">ПОЧИНАЙ</span> РОСТИ.
+      </h1>
 
-    <div class="hero-cta">
-      <a href="#packages" class="btn-primary magnetic">
-        Вибір рівня
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </a>
-      <a href="#ultimate" class="btn-ghost">
-        Повний пакет
-        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7h9M8 3.5l3.5 3.5L8 10.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </a>
+      <p>Від першого кроку в IT до стратегії рівня Senior. Персоналізоване менторство, що допоможе тобі опанувати ринок праці.</p>
+
+      <div class="hero-cta">
+        <a href="#packages" class="btn-primary magnetic">
+          Вибір рівня
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#ultimate" class="btn-ghost">
+          Повний пакет
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7h9M8 3.5l3.5 3.5L8 10.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat">
+          <div class="stat-num">50<span>+</span></div>
+          <div class="stat-label">Менті</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">4<span>x</span></div>
+          <div class="stat-label">Середній ріст зарплати</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">8<span>+</span></div>
+          <div class="stat-label">Років досвіду в IT</div>
+        </div>
+      </div>
+
+      <!-- <div class="scroll-indicator">
+        <div class="scroll-line"></div>
+        Скрол
+      </div> -->
     </div>
-
-    <div class="hero-stats">
-      <div class="stat">
-        <div class="stat-num">50<span>+</span></div>
-        <div class="stat-label">Менті</div>
-      </div>
-      <div class="stat">
-        <div class="stat-num">4<span>x</span></div>
-        <div class="stat-label">Середній ріст зарплати</div>
-      </div>
-      <div class="stat">
-        <div class="stat-num">8<span>+</span></div>
-        <div class="stat-label">Років досвіду в IT</div>
-      </div>
-    </div>
-
-    <!-- <div class="scroll-indicator">
-      <div class="scroll-line"></div>
-      Скрол
-    </div> -->
   </section>
 
   <!-- PACKAGES -->
@@ -233,6 +239,10 @@
       <div class="section-label">Послуги</div>
       <h2 class="section-title">4 пакети. 1 мета —<br />твій наступний рівень.</h2>
       <p class="section-sub">Обери програму залежно від того, де ти зараз знаходишся на своєму шляху.</p>
+      <div class="currency-badge" id="currency-badge" aria-live="polite">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        Ціни у <span id="currency-note">EUR</span>
+      </div>
     </div>
 
     <div class="packages-grid">
@@ -251,8 +261,8 @@
           <li>Чіткий план навчання та пошуку першої роботи</li>
         </ul>
         <div class="pkg-price">
-            <div class="ultimate-price-tag white">
-        <span class="currency">€</span>25</div>
+            <div class="ultimate-price-tag white" data-price="career">
+        <span class="currency">€</span><span class="price-num">25</span></div>
           <div class="pkg-price-arrow">
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 3h8v8M3 11L11 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
           </div>
@@ -273,7 +283,7 @@
           <li>Стратегія пошуку роботи: супровідні листи та нетворкінг</li>
         </ul>
         <div class="pkg-price">
-            <div class="ultimate-price-tag white"><span class="currency">€</span>30</div>
+            <div class="ultimate-price-tag white" data-price="intern"><span class="currency">€</span><span class="price-num">30</span></div>
           <div class="pkg-price-arrow">
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 3h8v8M3 11L11 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
           </div>
@@ -294,7 +304,7 @@
           <li>Ревʼю навичок для підготовки до наступного рівня</li>
         </ul>
         <div class="pkg-price">
-          <div class="ultimate-price-tag white"><span class="currency">€</span>50</div>
+          <div class="ultimate-price-tag white" data-price="junior"><span class="currency">€</span><span class="price-num">50</span></div>
           <div class="pkg-price-arrow">
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 3h8v8M3 11L11 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
           </div>
@@ -315,7 +325,7 @@
           <li>Аналіз інтервʼю: деконструкція реальних співбесід для виправлення помилок</li>
         </ul>
         <div class="pkg-price">
-          <div class="ultimate-price-tag white"><span class="currency">€</span>75</div>
+          <div class="ultimate-price-tag white" data-price="middle"><span class="currency">€</span><span class="price-num">75</span></div>
           <div class="pkg-price-arrow">
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 3h8v8M3 11L11 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
           </div>
@@ -331,8 +341,8 @@
       <div class="ultimate-left">
         <div class="ultimate-badge">Найбільш популярне</div>
         <h2 class="ultimate-title">ПОВНА ПІДГОТОВКА<br />ДО РИНКУ</h2>
-        <div class="ultimate-price-tag">
-          <span class="currency">€</span>350
+        <div class="ultimate-price-tag" data-price="ultimate">
+          <span class="currency">€</span><span class="price-num">350</span>
         </div>
         <a href="https://t.me/olegbolob" class="btn-white" target="_blank" rel="noopener">
           Зайняти місце
@@ -384,7 +394,7 @@
 
     <div class="hourly-card">
       <div class="pkg-tag">ПОЧАСОВА КОНСУЛЬТАЦІЯ</div>
-      <div class="hourly-price"><span>€</span>75</div>
+      <div class="hourly-price" data-price="hourly"><span class="currency">€</span><span class="price-num">75</span></div>
       <div class="hourly-per">/ Одна година</div>
       <div class="feature-chips">
         <div class="chip">Один на один</div>
