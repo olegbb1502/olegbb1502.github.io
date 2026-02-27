@@ -424,3 +424,43 @@ if (!isTouch() && !prefersReducedMotion) {
     })
     .catch(() => { /* keep EUR on error */ });
 })();
+
+
+/* ── LEGAL MODALS ── */
+(function () {
+  function openModal(id) {
+    const overlay = document.getElementById(id);
+    if (!overlay) return;
+    overlay.classList.add('is-open');
+    document.body.style.overflow = 'hidden';
+    // focus the close button for keyboard accessibility
+    const closeBtn = overlay.querySelector('[data-modal-close]');
+    if (closeBtn) closeBtn.focus();
+  }
+
+  function closeModal(overlay) {
+    overlay.classList.remove('is-open');
+    document.body.style.overflow = '';
+  }
+
+  // Open via data-modal-open buttons
+  document.querySelectorAll('[data-modal-open]').forEach(btn => {
+    btn.addEventListener('click', () => openModal(btn.dataset.modalOpen));
+  });
+
+  // Close via X button or overlay click
+  document.querySelectorAll('.modal-overlay').forEach(overlay => {
+    overlay.addEventListener('click', e => {
+      if (e.target === overlay || e.target.closest('[data-modal-close]')) {
+        closeModal(overlay);
+      }
+    });
+  });
+
+  // Close on Escape key
+  document.addEventListener('keydown', e => {
+    if (e.key !== 'Escape') return;
+    const open = document.querySelector('.modal-overlay.is-open');
+    if (open) closeModal(open);
+  });
+})();
