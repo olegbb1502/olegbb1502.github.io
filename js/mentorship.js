@@ -347,83 +347,82 @@ if (!isTouch() && !prefersReducedMotion) {
    Europe, USD everywhere else. Cached 24 h in
    localStorage so the API is hit only once/day.
    ════════════════════════════════════════════════ */
-(function () {
-  /* ── Price table (display strings, pre-formatted) ── */
-  const PRICES = {
-  //  key         EUR      USD      UAH
-    career:   { eur: '25',   usd: '27',  uah: '1 100'  },
-    intern:   { eur: '30',   usd: '32',  uah: '1 350'  },
-    junior:   { eur: '50',   usd: '54',  uah: '2 200'  },
-    middle:   { eur: '75',   usd: '80',  uah: '3 300'  },
-    ultimate: { eur: '350',  usd: '375', uah: '15 000' },
-    hourly:   { eur: '75',   usd: '80',  uah: '3 300'  },
-  };
+// (function () {
+//   /* ── Price table (display strings, pre-formatted) ── */
+//   const PRICES = {
+//   //  key         EUR      USD      UAH
+//     career:   { eur: '75',   usd: '80',  uah: '3 300'  },
+//     junior:   { eur: '50',   usd: '54',  uah: '2 200'  },
+//     middle:   { eur: '75',   usd: '80',  uah: '3 300'  },
+//     ultimate: { eur: '100',  usd: '108', uah: '4 400'  },
+//     hourly:   { eur: '75',   usd: '80',  uah: '3 300'  },
+//   };
 
-  const SYMBOLS = { eur: '€', usd: '$', uah: '₴' };
-  const LABELS  = { eur: 'EUR', usd: 'USD', uah: 'UAH' };
+//   const SYMBOLS = { eur: '€', usd: '$', uah: '₴' };
+//   const LABELS  = { eur: 'EUR', usd: 'USD', uah: 'UAH' };
 
-  /* EU + EEA + CH countries → show EUR */
-  const EU = new Set([
-    'AT','BE','BG','CY','CZ','DE','DK','EE','ES','FI','FR','GR','HR',
-    'HU','IE','IT','LT','LU','LV','MT','NL','PL','PT','RO','SE','SI',
-    'SK',              // EU-27
-    'NO','IS','LI',    // EEA
-    'CH',              // Switzerland
-  ]);
+//   /* EU + EEA + CH countries → show EUR */
+//   const EU = new Set([
+//     'AT','BE','BG','CY','CZ','DE','DK','EE','ES','FI','FR','GR','HR',
+//     'HU','IE','IT','LT','LU','LV','MT','NL','PL','PT','RO','SE','SI',
+//     'SK',              // EU-27
+//     'NO','IS','LI',    // EEA
+//     'CH',              // Switzerland
+//   ]);
 
-  function detectCurrency(cc) {
-    if (cc === 'UA') return 'uah';
-    if (EU.has(cc))  return 'eur';
-    return 'usd';
-  }
+//   function detectCurrency(cc) {
+//     if (cc === 'UA') return 'uah';
+//     if (EU.has(cc))  return 'eur';
+//     return 'usd';
+//   }
 
-  function applyCurrency(key) {
-    const sym = SYMBOLS[key];
-    document.querySelectorAll('[data-price]').forEach(el => {
-      const pkg = el.dataset.price;
-      if (!PRICES[pkg]) return;
-      const symEl = el.querySelector('.currency');
-      const numEl = el.querySelector('.price-num');
-      if (symEl) symEl.textContent = sym;
-      if (numEl) numEl.textContent = PRICES[pkg][key];
-    });
-    const note = document.getElementById('currency-note');
-    if (note) note.textContent = LABELS[key];
-  }
+//   function applyCurrency(key) {
+//     const sym = SYMBOLS[key];
+//     document.querySelectorAll('[data-price]').forEach(el => {
+//       const pkg = el.dataset.price;
+//       if (!PRICES[pkg]) return;
+//       const symEl = el.querySelector('.currency');
+//       const numEl = el.querySelector('.price-num');
+//       if (symEl) symEl.textContent = sym;
+//       if (numEl) numEl.textContent = PRICES[pkg][key];
+//     });
+//     const note = document.getElementById('currency-note');
+//     if (note) note.textContent = LABELS[key];
+//   }
 
-  /* ── Try localStorage cache first ── */
-  const CACHE_KEY = 'blt_currency';
-  const CACHE_TTL = 86400000; // 24 h in ms
-  try {
-    const hit = JSON.parse(localStorage.getItem(CACHE_KEY));
-    if (hit && Date.now() - hit.ts < CACHE_TTL) {
-      applyCurrency(hit.k);
-      return; // no network call needed
-    }
-  } catch (_) { /* ignore */ }
+//   /* ── Try localStorage cache first ── */
+//   const CACHE_KEY = 'blt_currency';
+//   const CACHE_TTL = 86400000; // 24 h in ms
+//   try {
+//     const hit = JSON.parse(localStorage.getItem(CACHE_KEY));
+//     if (hit && Date.now() - hit.ts < CACHE_TTL) {
+//       applyCurrency(hit.k);
+//       return; // no network call needed
+//     }
+//   } catch (_) { /* ignore */ }
 
-  /* EUR is the default while the fetch is in flight */
-  applyCurrency('eur');
+//   /* EUR is the default while the fetch is in flight */
+//   applyCurrency('eur');
 
-  /* ── Fetch country from ipapi.co (free, no key) ── */
-  const ctrl = typeof AbortSignal !== 'undefined' && AbortSignal.timeout
-    ? { signal: AbortSignal.timeout(5000) }
-    : {};
+//   /* ── Fetch country from ipapi.co (free, no key) ── */
+//   const ctrl = typeof AbortSignal !== 'undefined' && AbortSignal.timeout
+//     ? { signal: AbortSignal.timeout(5000) }
+//     : {};
 
-  fetch('https://ipapi.co/json/', ctrl)
-    .then(r => { console.log(r); if (!r.ok) throw new Error(); return r.json(); })
-    .then(data => {
-      const cc  = (data && data.country_code) || '';
-      console.log(cc);
+//   fetch('https://ipapi.co/json/', ctrl)
+//     .then(r => { console.log(r); if (!r.ok) throw new Error(); return r.json(); })
+//     .then(data => {
+//       const cc  = (data && data.country_code) || '';
+//       console.log(cc);
       
-      const key = detectCurrency(cc);
-      applyCurrency(key);
-      try {
-        localStorage.setItem(CACHE_KEY, JSON.stringify({ k: key, ts: Date.now() }));
-      } catch (_) { /* quota exceeded — ignore */ }
-    })
-    .catch(() => { /* keep EUR on error */ });
-})();
+//       const key = detectCurrency(cc);
+//       applyCurrency(key);
+//       try {
+//         localStorage.setItem(CACHE_KEY, JSON.stringify({ k: key, ts: Date.now() }));
+//       } catch (_) { /* quota exceeded — ignore */ }
+//     })
+//     .catch(() => { /* keep EUR on error */ });
+// })();
 
 
 /* ── LEGAL MODALS ── */
