@@ -1587,3 +1587,139 @@ footer {
   font-family: 'Roboto', sans-serif;
 }
 .footer-legal-link:hover { color: var(--purple); }
+
+
+/* ════════════════════════════════
+   HERO SPLIT (two-column hero)
+   ════════════════════════════════ */
+.hero-content--split {
+  max-width: 1240px;
+  width: 100%;
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.hero-right {
+  width: 100%;
+  max-width: 400px;
+  margin-top: 40px;
+}
+
+@media (min-width: 1000px) {
+  .hero-content--split {
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+    gap: 64px;
+  }
+  .hero-left {
+    align-items: flex-start;
+    flex: 1;
+  }
+  .hero-left .hero-cta {
+    flex-direction: row;
+  }
+  .hero-left p {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .hero-right {
+    flex-shrink: 0;
+    width: 360px;
+    margin-top: 0;
+  }
+}
+
+.hero-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 8px 0;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.35s, box-shadow 0.35s;
+}
+
+.hero-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--purple), transparent);
+}
+
+.hero-card:hover {
+  border-color: var(--border-hover);
+  box-shadow: 0 24px 64px rgba(0,0,0,0.4), 0 0 40px var(--purple-glow);
+}
+
+.hero-checklist {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-checklist li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 14px 24px;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.88rem;
+  color: rgba(255,255,255,0.82);
+  line-height: 1.5;
+}
+
+.hero-checklist li:last-child { border-bottom: none; }
+
+.hero-check {
+  color: var(--purple);
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.hero-price-note {
+  margin-top: 16px;
+  font-size: 0.78rem;
+  color: var(--muted);
+  letter-spacing: 0.05em;
+  animation: fadeUp 0.9s 0.5s ease both;
+}
+
+
+/* ════════════════════════════════
+   GRID-3 MODIFIER (3-col on desktop)
+   ════════════════════════════════ */
+@media (min-width: 900px) {
+  .grid-3 { grid-template-columns: repeat(3, 1fr); }
+}
+
+
+/* ════════════════════════════════
+   PAIN / WHY EMOJI
+   ════════════════════════════════ */
+.pain-emoji {
+  font-size: 1.8rem;
+  line-height: 1;
+  margin-bottom: 16px;
+  display: block;
+}
+
+
+/* ════════════════════════════════
+   TRUST ROW (CTA section)
+   ════════════════════════════════ */
+.trust-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 20px;
+  font-size: 0.78rem;
+  color: var(--muted);
+  margin-top: -8px;
+}
